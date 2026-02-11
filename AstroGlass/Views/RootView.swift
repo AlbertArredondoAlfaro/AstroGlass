@@ -7,14 +7,8 @@ struct RootView: View {
         ZStack {
             CosmicBackgroundView()
 
-            if model.hasCompletedOnboarding {
+            if model.hasCompletedOnboarding, model.profile != nil {
                 MainTabView()
-                    .safeAreaInset(edge: .bottom) {
-                        if model.adService.shouldShowBanner {
-                            AdBannerContainerView(adUnitId: model.adService.bannerAdUnitId)
-                                .transition(.move(edge: .bottom).combined(with: .opacity))
-                        }
-                    }
                     .transition(.opacity.combined(with: .scale(scale: 0.97)))
             } else {
                 OnboardingView()

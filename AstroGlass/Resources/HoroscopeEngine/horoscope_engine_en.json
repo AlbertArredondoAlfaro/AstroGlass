@@ -1,0 +1,45 @@
+{
+  "openingTemplate": "Starting Monday, you'll feel it right away: this week's theme —[THEME]— helps you cut through the noise and make cleaner decisions.",
+  "manifestationTemplate": "With [SUN_NAME] as your Sun and [RISING_NAME] as your Rising, this energy fits you well: you know what matters and how to move it forward without drama. [PROFILE_BASE] Your sweet spot lands between Tuesday afternoon and Thursday morning, especially for sorting priorities and having one overdue conversation.",
+  "adviceTemplate": "Friendly reality check: choose two measurable goals and get them done before Friday. If someone pushes your buttons, don't fire back instantly; take a beat, then answer from a calmer and smarter place.",
+  "closingTemplate": "By the weekend, you'll feel lighter, clearer, and quietly proud of how you handled things.",
+  "profileBaseTemplate": "At your core, this combo is [SUN_CORE], expressed outwardly through a [RISING_STYLE] style.",
+  "themes": [
+    "quiet alignment",
+    "creative ignition",
+    "emotional cleansing",
+    "bold choices",
+    "gentle healing",
+    "sacred boundaries",
+    "new opportunities",
+    "inner clarity"
+  ],
+  "sunCore": {
+    "aries": "bold and direct momentum",
+    "taurus": "steady calm and practical strength",
+    "gemini": "fast and adaptable thinking",
+    "cancer": "emotional intuition and protective focus",
+    "leo": "warm creative leadership",
+    "virgo": "precision, order, and continuous improvement",
+    "libra": "balanced perspective and diplomacy",
+    "scorpio": "strategic intensity and depth",
+    "sagittarius": "expansion, honesty, and meaning-seeking",
+    "capricorn": "discipline, ambition, and result focus",
+    "aquarius": "mental independence and innovative vision",
+    "pisces": "sensitivity, empathy, and creativity"
+  },
+  "risingStyle": {
+    "aries": "decisive and fast-moving",
+    "taurus": "steady and grounded",
+    "gemini": "curious and communicative",
+    "cancer": "protective and emotionally aware",
+    "leo": "visible, warm, and confident",
+    "virgo": "methodical and detail-oriented",
+    "libra": "harmonizing and polished",
+    "scorpio": "intense and private",
+    "sagittarius": "open and exploratory",
+    "capricorn": "serious and goal-driven",
+    "aquarius": "independent and original",
+    "pisces": "empathetic and fluid"
+  }
+}

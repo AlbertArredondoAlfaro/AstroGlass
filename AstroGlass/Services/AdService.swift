@@ -58,12 +58,9 @@ final class AdService: NSObject {
     }
 
     func showInterstitialIfAllowed() {
-        guard canShowInterstitial,
-              let interstitial,
-              let root = UIApplication.shared.topMostViewController() else { return }
-
-        defaults.set(Date().timeIntervalSinceReferenceDate, forKey: DefaultsKeys.lastInterstitialTimestamp)
-        interstitial.present(from: root)
+        // Temporarily disabled while weekly forecast should always be accessible.
+        // Re-enable in monetization pass.
+        return
     }
 }
 
