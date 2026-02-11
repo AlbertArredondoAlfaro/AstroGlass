@@ -218,3 +218,6 @@
 "onboarding.city.error.network" = "Error de red al buscar la ciudad. Inténtalo de nuevo.";
 "onboarding.city.error.denied" = "Los servicios de localización están bloqueados para esta app.";
 "onboarding.city.error.generic" = "No hemos podido resolver esa ciudad ahora mismo. Vuelve a intentarlo.";
+"onboarding.city.confirm" = "Usar esta ciudad";
+"onboarding.city.confirmed" = "Ciudad reconocida";
+"onboarding.city.coords" = "Coordenadas";

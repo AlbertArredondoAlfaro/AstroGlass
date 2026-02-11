@@ -42,6 +42,9 @@ enum AscendantCalculator {
         var asc = atan2(numerator, denominator)
         var ascDegrees = rad2deg(asc)
         if ascDegrees < 0 { ascDegrees += 360 }
+        // This formula returns the opposite horizon point in our coordinate setup,
+        // so rotate 180 degrees to obtain the actual Ascendant (eastern horizon).
+        ascDegrees = (ascDegrees + 180).truncatingRemainder(dividingBy: 360)
 
         let index = Int(ascDegrees / 30) % 12
         return ZodiacSign.allCases[index]

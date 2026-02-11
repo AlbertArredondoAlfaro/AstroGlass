@@ -218,3 +218,6 @@
 "onboarding.city.error.network" = "Network error while searching city. Try again.";
 "onboarding.city.error.denied" = "Location services are blocked for this app.";
 "onboarding.city.error.generic" = "We couldn't resolve that city right now. Please try again.";
+"onboarding.city.confirm" = "Use this city";
+"onboarding.city.confirmed" = "City recognized";
+"onboarding.city.coords" = "Coordinates";
