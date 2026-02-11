@@ -1,0 +1,45 @@
+{
+  "openingTemplate": "Des de dilluns ho notaràs clar: el tema de la setmana —[THEME]— t'ajuda a filtrar soroll i a decidir millor.",
+  "manifestationTemplate": "Amb Sol a [SUN_NAME] i ascendent [RISING_NAME], aquesta energia et va molt bé: tens clar què vols i també com fer-ho avançar sense complicar-ho. [PROFILE_BASE] El tram entre dimarts a la tarda i dijous al matí serà especialment bo per ordenar prioritats i resoldre una conversa pendent.",
+  "adviceTemplate": "Consell de confiança: marca't dos objectius mesurables i deixa'ls tancats abans de divendres. Si puja la tensió, no responguis en calent; respira, agafa distància i torna-hi amb més cap.",
+  "closingTemplate": "Acabaràs la setmana més lleuger, amb les idees clares i amb aquella sensació bona d'haver fet el que tocava.",
+  "profileBaseTemplate": "La base d'aquesta combinació és [SUN_CORE], i cap enfora es mostra amb un estil [RISING_STYLE].",
+  "themes": [
+    "alineació serena",
+    "impuls creatiu",
+    "neteja emocional",
+    "decisions valentes",
+    "sanació suau",
+    "límits sagrats",
+    "noves oportunitats",
+    "claredat interior"
+  ],
+  "sunCore": {
+    "aries": "impuls valent i directe",
+    "taurus": "constància, calma i sentit pràctic",
+    "gemini": "ment ràpida i adaptable",
+    "cancer": "intuïció emocional i protecció dels seus",
+    "leo": "lideratge càlid i creatiu",
+    "virgo": "ordre, precisió i millora contínua",
+    "libra": "visió equilibrada i diplomàcia",
+    "scorpio": "intensitat estratègica i profunditat",
+    "sagittarius": "expansió, sinceritat i recerca de sentit",
+    "capricorn": "disciplina, ambició i focus en resultats",
+    "aquarius": "independència mental i mirada innovadora",
+    "pisces": "sensibilitat, empatia i creativitat"
+  },
+  "risingStyle": {
+    "aries": "decidida i ràpida",
+    "taurus": "estable i ferma",
+    "gemini": "curiosa i comunicativa",
+    "cancer": "protectora i sensible a l'entorn",
+    "leo": "visible, càlida i segura",
+    "virgo": "metòdica i orientada al detall",
+    "libra": "conciliadora i estètica",
+    "scorpio": "intensa i reservada",
+    "sagittarius": "oberta i aventurera",
+    "capricorn": "seriosa i orientada a objectius",
+    "aquarius": "independent i original",
+    "pisces": "empàtica i flexible"
+  }
+}

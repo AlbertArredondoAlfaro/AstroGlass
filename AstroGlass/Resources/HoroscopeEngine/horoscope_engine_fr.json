@@ -1,0 +1,45 @@
+{
+  "openingTemplate": "Dès lundi, tu vas le sentir: le thème de la semaine —[THEME]— t'aide à y voir plus clair et à décider sans te disperser.",
+  "manifestationTemplate": "Avec [SUN_NAME] en solaire et [RISING_NAME] en ascendant, cette énergie te correspond bien: tu sais où aller et comment faire avancer les choses sans te perdre dans le bruit. [PROFILE_BASE] La meilleure fenêtre se situe entre mardi après-midi et jeudi matin, surtout pour remettre de l'ordre dans tes priorités et débloquer une discussion importante.",
+  "adviceTemplate": "Conseil d'ami: fixe deux objectifs mesurables et boucle-les avant vendredi. Si la pression monte, ne réponds pas à chaud; prends une pause courte, puis reviens avec une réponse plus posée et plus juste.",
+  "closingTemplate": "Tu finis la semaine plus léger, plus lucide, et franchement fier de la façon dont tu as géré tout ça.",
+  "profileBaseTemplate": "Au fond, cette combinaison repose sur [SUN_CORE], avec une manière de te montrer [RISING_STYLE].",
+  "themes": [
+    "alignement serein",
+    "élan créatif",
+    "nettoyage émotionnel",
+    "choix courageux",
+    "guérison douce",
+    "limites sacrées",
+    "nouvelles opportunités",
+    "clarté intérieure"
+  ],
+  "sunCore": {
+    "aries": "élan courageux et direct",
+    "taurus": "constance, calme et force pratique",
+    "gemini": "esprit rapide et adaptable",
+    "cancer": "intuition émotionnelle et protection des siens",
+    "leo": "leadership chaleureux et créatif",
+    "virgo": "précision, ordre et amélioration continue",
+    "libra": "vision équilibrée et diplomatie",
+    "scorpio": "intensité stratégique et profondeur",
+    "sagittarius": "expansion, franchise et recherche de sens",
+    "capricorn": "discipline, ambition et focus résultats",
+    "aquarius": "indépendance mentale et vision innovante",
+    "pisces": "sensibilité, empathie et créativité"
+  },
+  "risingStyle": {
+    "aries": "décisif et rapide",
+    "taurus": "stable et ancré",
+    "gemini": "curieux et communicatif",
+    "cancer": "protecteur et sensible émotionnellement",
+    "leo": "visible, chaleureux et confiant",
+    "virgo": "méthodique et orienté détail",
+    "libra": "harmonisant et soigné",
+    "scorpio": "intense et discret",
+    "sagittarius": "ouvert et explorateur",
+    "capricorn": "sérieux et orienté objectifs",
+    "aquarius": "indépendant et original",
+    "pisces": "empathique et fluide"
+  }
+}

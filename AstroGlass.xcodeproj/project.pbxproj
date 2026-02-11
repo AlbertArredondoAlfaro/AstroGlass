@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00ABFDBF607023C6EBC50D90 /* horoscope_engine_ca.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E11140B09D17A3A3D7BB6 /* horoscope_engine_ca.json */; };
 		0242F5C4074AC33E92B036FD /* ZodiacCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73412F6B235F0758BE7147C /* ZodiacCalculator.swift */; };
 		05D56784B4E822AD19CBCF5F /* AppCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F01CAC9488AF46874D96B /* AppCardStyle.swift */; };
 		07DBBBA82C358DC327DBB6AF /* AstroGlassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93F2E92CF930C607662F2B7 /* AstroGlassApp.swift */; };
@@ -15,8 +16,10 @@
 		2622D36BA0BC18F641CC1A72 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640B2831CF686343E3336ED8 /* UserProfile.swift */; };
 		27CA59D767FDE661CA1E7B52 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E7188F2665D8C82C29441 /* City.swift */; };
 		284D0495AD553BB121AE6677 /* AdService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581267BA80FDF74AB2858BC4 /* AdService.swift */; };
+		2DB45BAC331B145B3C653775 /* horoscope_engine_es.json in Resources */ = {isa = PBXBuildFile; fileRef = 74552EBC83EB6556A5203A33 /* horoscope_engine_es.json */; };
 		34AA27D8E9A32C4B60981AC1 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 80632BF08AF79906D6AA4AC9 /* GoogleMobileAds */; };
 		378B2AF12DD1D2BD131DD118 /* OnboardingFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309A469B36BCAFF443056302 /* OnboardingFlowTests.swift */; };
+		4569E82C33F95D2F8F3EDAF1 /* horoscope_engine_de.json in Resources */ = {isa = PBXBuildFile; fileRef = 58BB2028E2545800B5A86EEE /* horoscope_engine_de.json */; };
 		480C8399F9A60B63864CA721 /* CosmicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8555B9BEC3E995837BD6C282 /* CosmicBackgroundView.swift */; };
 		4ADBA01C996E9086D5044283 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456654B9039C02FCB1A02F24 /* GlassCard.swift */; };
 		4C4C8DF9969248708C1EEB19 /* ZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC6628D7DD8B88560B4EF6 /* ZodiacSign.swift */; };
@@ -47,6 +50,8 @@
 		BF0E8FEE4A0DAA25CFEC454E /* ShimmerPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0E8DBE14B2EBC9CE97115 /* ShimmerPlaceholderView.swift */; };
 		CE72EA936DE771B3CB5C56A4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03DF00F3AD3EF6AB5EDDBEC /* RootView.swift */; };
 		DC76D03B1597CB458CC7D5AB /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD8611EFF5021791D1D7E1 /* AppModel.swift */; };
+		E79A3A2EA47DEAF545BDD7FB /* horoscope_engine_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = 39C30DB3D8534CEEE53DCB3D /* horoscope_engine_fr.json */; };
+		EC24C29D52408C89AE028AB9 /* horoscope_engine_en.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FFA07A7D02389E869E8EDA2 /* horoscope_engine_en.json */; };
 		EF3CBD86B1D783378AE92CDA /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543540BFE5FB907B9B4612D4 /* NotificationScheduler.swift */; };
 		F330180A1E23EF1A50885E6C /* UIApplication+TopMost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC153A7584A418288E4FFA8B /* UIApplication+TopMost.swift */; };
 		F42AF5D159081D26F798651C /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F9828F772900C0835CF06D /* AdBannerView.swift */; };
@@ -78,9 +83,11 @@
 		309A469B36BCAFF443056302 /* OnboardingFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowTests.swift; sourceTree = "<group>"; };
 		387CE35A8F916EA8B3235DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		38B50D328DEF2B695B2A76E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		39C30DB3D8534CEEE53DCB3D /* horoscope_engine_fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = horoscope_engine_fr.json; sourceTree = "<group>"; };
 		435F879DCBBB977EC4F067C2 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		446672CA973F7F78DDDCFEC6 /* CityLookupServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityLookupServiceTests.swift; sourceTree = "<group>"; };
 		456654B9039C02FCB1A02F24 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
+		4A7E11140B09D17A3A3D7BB6 /* horoscope_engine_ca.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = horoscope_engine_ca.json; sourceTree = "<group>"; };
 		4B9D362B28D0466251262C85 /* SignsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignsGridView.swift; sourceTree = "<group>"; };
 		4C9E5502BC65AADBE7669197 /* GlowSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowSymbolView.swift; sourceTree = "<group>"; };
 		53FD08FEF2E4F6548642C6F8 /* ParticleBurstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleBurstView.swift; sourceTree = "<group>"; };
@@ -88,10 +95,13 @@
 		56CBD06672A7263CD471058F /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
 		574117BC226AD41B52F05A57 /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
 		581267BA80FDF74AB2858BC4 /* AdService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdService.swift; sourceTree = "<group>"; };
+		58BB2028E2545800B5A86EEE /* horoscope_engine_de.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = horoscope_engine_de.json; sourceTree = "<group>"; };
+		5FFA07A7D02389E869E8EDA2 /* horoscope_engine_en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = horoscope_engine_en.json; sourceTree = "<group>"; };
 		640B2831CF686343E3336ED8 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		68645A991F2A6C1D62E78117 /* StarfieldCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarfieldCanvasView.swift; sourceTree = "<group>"; };
 		6B63234779E237FE703C98DD /* AscendantCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscendantCalculator.swift; sourceTree = "<group>"; };
 		716BD1FA1B141BA56F963F1A /* AstroGlass.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AstroGlass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74552EBC83EB6556A5203A33 /* horoscope_engine_es.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = horoscope_engine_es.json; sourceTree = "<group>"; };
 		8555B9BEC3E995837BD6C282 /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
 		86248D0E2020617B9086D9FC /* DefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKeys.swift; sourceTree = "<group>"; };
 		8A56C5897160FB8E437BB3F4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -148,6 +158,7 @@
 				387CE35A8F916EA8B3235DB9 /* Info.plist */,
 				BFF95BEFA2EFE21DE98596AF /* InfoPlist.strings */,
 				D957E31D0A2BC860EDAD1BDE /* Localizable.strings */,
+				4AAA3168B7BB02BBE8991D37 /* HoroscopeEngine */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -198,6 +209,18 @@
 				DC153A7584A418288E4FFA8B /* UIApplication+TopMost.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4AAA3168B7BB02BBE8991D37 /* HoroscopeEngine */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E11140B09D17A3A3D7BB6 /* horoscope_engine_ca.json */,
+				58BB2028E2545800B5A86EEE /* horoscope_engine_de.json */,
+				5FFA07A7D02389E869E8EDA2 /* horoscope_engine_en.json */,
+				74552EBC83EB6556A5203A33 /* horoscope_engine_es.json */,
+				39C30DB3D8534CEEE53DCB3D /* horoscope_engine_fr.json */,
+			);
+			path = HoroscopeEngine;
 			sourceTree = "<group>";
 		};
 		4E03248FDE66CC1A4BF27DF9 /* Signs */ = {
@@ -384,6 +407,11 @@
 				74DF61A1E508CEDD8543C1CB /* Assets.xcassets in Resources */,
 				4EE789FA567F9871EE168054 /* InfoPlist.strings in Resources */,
 				5DB5594E144AAB0560D0F1BA /* Localizable.strings in Resources */,
+				00ABFDBF607023C6EBC50D90 /* horoscope_engine_ca.json in Resources */,
+				4569E82C33F95D2F8F3EDAF1 /* horoscope_engine_de.json in Resources */,
+				EC24C29D52408C89AE028AB9 /* horoscope_engine_en.json in Resources */,
+				2DB45BAC331B145B3C653775 /* horoscope_engine_es.json in Resources */,
+				E79A3A2EA47DEAF545BDD7FB /* horoscope_engine_fr.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

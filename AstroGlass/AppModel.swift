@@ -30,7 +30,6 @@ final class AppModel {
     init() {
         hasCompletedOnboarding = defaults.bool(forKey: DefaultsKeys.hasCompletedOnboarding)
         notificationsEnabled = defaults.bool(forKey: DefaultsKeys.notificationsEnabled)
-        profile = nil
         restoreProfile()
     }
 
@@ -69,6 +68,7 @@ final class AppModel {
             risingSign: risingSign
         )
 
+        persistProfile()
         hasCompletedOnboarding = true
         refreshHoroscope()
     }
@@ -78,7 +78,11 @@ final class AppModel {
 
         isLoadingHoroscope = true
         let week = Calendar.current.component(.weekOfYear, from: date)
-        let generated = horoscopeService.weeklyHoroscope(for: profile.sunSign, weekOfYear: week)
+        let generated = horoscopeService.weeklyHoroscope(
+            for: profile.sunSign,
+            risingSign: profile.risingSign,
+            weekOfYear: week
+        )
 
         withAnimation(.spring(response: 0.58, dampingFraction: 0.62)) {
             weeklyHoroscope = generated
@@ -110,10 +114,19 @@ final class AppModel {
     }
 
     private func restoreProfile() {
-        guard let data = defaults.data(forKey: DefaultsKeys.profileData),
-              let decoded = try? JSONDecoder().decode(UserProfile.self, from: data)
-        else { return }
+        guard let data = defaults.data(forKey: DefaultsKeys.profileData) else {
+            profile = nil
+            hasCompletedOnboarding = false
+            return
+        }
+
+        guard let decoded = try? JSONDecoder().decode(UserProfile.self, from: data) else {
+            profile = nil
+            hasCompletedOnboarding = false
+            return
+        }
 
         profile = decoded
+        hasCompletedOnboarding = true
     }
 }

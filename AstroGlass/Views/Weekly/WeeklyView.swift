@@ -2,83 +2,151 @@ import SwiftUI
 
 struct WeeklyView: View {
     @Environment(AppModel.self) private var model
-    @State private var burstTrigger = 0
-    @State private var expanded = false
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    private var cardMaxWidth: CGFloat {
+        horizontalSizeClass == .regular ? AppTheme.Metrics.cardMaxWidthRegular : AppTheme.Metrics.cardMaxWidthCompact
+    }
+
+    private var sidePadding: CGFloat {
+        horizontalSizeClass == .regular ? AppTheme.Metrics.sidePaddingRegular : AppTheme.Metrics.sidePaddingCompact
+    }
+
+    private var stableWeeklyHoroscope: Horoscope? {
+        if let cached = model.weeklyHoroscope {
+            return cached
+        }
+        guard let profile = model.profile else { return nil }
+        let currentWeek = Calendar.current.component(.weekOfYear, from: Date())
+        return model.horoscopeService.weeklyHoroscope(
+            for: profile.sunSign,
+            risingSign: profile.risingSign,
+            weekOfYear: currentWeek
+        )
+    }
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: AppTheme.Metrics.sectionSpacing) {
-                if let profile = model.profile {
-                    heroCard(profile)
-                }
+        ZStack {
+            CosmicBackgroundView()
 
-                if model.isLoadingHoroscope {
-                    ShimmerPlaceholderView()
-                        .frame(height: 220)
-                } else if let horoscope = model.weeklyHoroscope {
-                    GlassCard(style: .standard) {
-                        VStack(alignment: .leading, spacing: 12) {
-                            ForEach(horoscope.paragraphs.indices, id: \.self) { i in
-                                Text(horoscope.paragraphs[i])
-                                    .foregroundStyle(.white.opacity(0.94))
-                                    .font(AppTheme.Typography.body)
-                            }
-                            if expanded {
-                                Text(String(localized: "weekly.footer"))
-                                    .font(AppTheme.Typography.footnote)
-                                    .foregroundStyle(.secondary)
-                            }
+            ScrollView {
+                VStack(spacing: 20) {
+                    Spacer(minLength: 0)
+
+                    Text("AstroGlass")
+                        .font(AppTheme.Typography.displaySerif(46))
+                        .foregroundStyle(.white)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: cardMaxWidth, alignment: .center)
+                        .padding(.horizontal, sidePadding)
+
+                    Group {
+                        if let profile = model.profile {
+                            heroCard(profile)
+                        } else {
+                            heroPlaceholderCard()
                         }
-                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                }
+                    .frame(maxWidth: cardMaxWidth)
+                    .padding(.horizontal, sidePadding)
 
-                Button(expanded ? String(localized: "action.collapse") : String(localized: "action.readfull")) {
-                    let wasExpanded = expanded
-                    withAnimation(.spring(response: 0.58, dampingFraction: 0.62)) {
-                        expanded.toggle()
-                        burstTrigger += 1
-                    }
-                    if !wasExpanded {
-                        model.adService.showInterstitialIfAllowed()
-                    }
+                    forecastCard()
+                    .frame(maxWidth: cardMaxWidth)
+                    .padding(.horizontal, sidePadding)
+
+                    Spacer(minLength: 0)
                 }
-                .buttonStyle(AstroGlassPrimaryButtonStyle())
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 12)
             }
-            .padding(AppTheme.Metrics.screenPadding)
         }
-        .overlay(ParticleBurstView(trigger: burstTrigger))
-        .onAppear { model.refreshHoroscope() }
+        .onAppear {
+            if model.profile != nil {
+                model.refreshHoroscope()
+            }
+        }
+        .onChange(of: model.profile?.id) { _, _ in
+            if model.profile != nil {
+                model.refreshHoroscope()
+            }
+        }
     }
 
     private func heroCard(_ profile: UserProfile) -> some View {
         GlassCard(style: .hero) {
-            VStack(spacing: 14) {
-                GlowSymbolView(symbol: profile.sunSign.symbol, size: 94)
+            VStack(spacing: 12) {
                 Text(String(localized: "weekly.title"))
                     .font(AppTheme.Typography.headline)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.white.opacity(0.95))
 
-                Text(String(localized: String.LocalizationValue(profile.sunSign.nameKey)))
-                    .font(AppTheme.Typography.displaySerif(34, weight: .bold))
+                GlowSymbolView(symbol: profile.sunSign.symbol, size: 94)
 
-                Text(String(localized: "weekly.rising"))
-                    .font(AppTheme.Typography.caption)
-                    .foregroundStyle(.secondary)
-
-                Text(String(localized: String.LocalizationValue(profile.risingSign.nameKey)))
+                Text("\(String(localized: "weekly.sun.full")): \(String(localized: String.LocalizationValue(profile.sunSign.nameKey)))\n\(String(localized: "weekly.asc.full")): \(String(localized: String.LocalizationValue(profile.risingSign.nameKey)))")
                     .font(AppTheme.Typography.title3)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.white.opacity(0.96))
+                    .fixedSize(horizontal: false, vertical: true)
 
                 if !profile.hasExactTime {
                     Text(String(localized: "weekly.rising.approx"))
-                        .font(AppTheme.Typography.footnote)
-                        .foregroundStyle(.secondary)
+                        .font(AppTheme.Typography.caption)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 4)
+                        .background(.thinMaterial, in: Capsule(style: .continuous))
+                        .overlay(
+                            Capsule(style: .continuous)
+                                .stroke(.white.opacity(0.18), lineWidth: 1)
+                        )
                 }
             }
             .frame(maxWidth: .infinity)
         }
-        .scrollTransition(.interactive, axis: .vertical) { content, phase in
-            content.offset(y: -phase.value * 16)
+    }
+
+    private func heroPlaceholderCard() -> some View {
+        GlassCard(style: .hero) {
+            VStack(spacing: 12) {
+                Text(String(localized: "weekly.title"))
+                    .font(AppTheme.Typography.headline)
+                    .foregroundStyle(.white.opacity(0.95))
+                GlowSymbolView(symbol: "✦", size: 94)
+                Text("\(String(localized: "weekly.sun.full")): —\n\(String(localized: "weekly.asc.full")): —")
+                    .font(AppTheme.Typography.title3)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.white.opacity(0.96))
+            }
+            .frame(maxWidth: .infinity)
+        }
+    }
+
+    private func forecastCard() -> some View {
+        GlassCard(style: .standard) {
+            VStack(alignment: .leading, spacing: 14) {
+                Text(String(localized: "weekly.forecast.title"))
+                    .font(AppTheme.Typography.headline)
+                    .foregroundStyle(.white.opacity(0.96))
+
+                if model.isLoadingHoroscope {
+                    ShimmerPlaceholderView()
+                        .frame(height: 140)
+                } else if let horoscope = stableWeeklyHoroscope {
+                    ForEach(horoscope.paragraphs.indices, id: \.self) { i in
+                        Text(horoscope.paragraphs[i])
+                            .foregroundStyle(.white.opacity(0.94))
+                            .font(AppTheme.Typography.body)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+
+                    Text(String(localized: "weekly.footer"))
+                        .font(AppTheme.Typography.footnote)
+                        .foregroundStyle(.secondary)
+                        .padding(.top, 4)
+                } else {
+                    ShimmerPlaceholderView()
+                        .frame(height: 140)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 }

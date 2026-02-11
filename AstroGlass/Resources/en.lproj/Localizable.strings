@@ -50,18 +50,7 @@
 "notification.weekly.title" = "Your weekly horoscope is ready ✨";
 "notification.weekly.body" = "Open AstroGlass and read your cosmic guidance.";
 
-"weekly.theme.1" = "quiet alignment";
-"weekly.theme.2" = "creative ignition";
-"weekly.theme.3" = "emotional cleansing";
-"weekly.theme.4" = "bold choices";
-"weekly.theme.5" = "gentle healing";
-"weekly.theme.6" = "sacred boundaries";
-"weekly.theme.7" = "new opportunities";
-"weekly.theme.8" = "inner clarity";
 
-"horoscope.template.1" = "This week, %@, your %@ nature awakens under %@. Slow down, listen inward, and let your intuition choose the pace.";
-"horoscope.template.2" = "Your gift of %@ opens luminous doors, while %@ asks for awareness. The key vibration now is %@.";
-"horoscope.template.3" = "Mantra: %@. Move through the week as %@: centered, radiant, and intentional.";
 
 "element.fire" = "Fire";
 "element.earth" = "Earth";
@@ -221,3 +210,9 @@
 "onboarding.city.confirm" = "Use this city";
 "onboarding.city.confirmed" = "City recognized";
 "onboarding.city.coords" = "Coordinates";
+"weekly.sun.short" = "Sun";
+"weekly.asc.short" = "Asc";
+"weekly.sun.full" = "Sun Sign";
+"weekly.asc.full" = "Rising Sign";
+"weekly.forecast.title" = "Weekly Forecast";
+"weekly.forecast.empty" = "Your forecast will appear here in a moment.";

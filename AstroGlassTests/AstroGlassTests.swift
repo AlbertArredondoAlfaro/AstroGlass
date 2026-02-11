@@ -26,4 +26,22 @@ final class AstroGlassTests: XCTestCase {
 
         XCTAssertEqual(rising, .taurus)
     }
+
+    func testWeeklyHoroscopeUsesSunAndRisingAndHasRichLength() {
+        let service = HoroscopeService()
+        let horoscope = service.weeklyHoroscope(for: .scorpio, risingSign: .taurus, weekOfYear: 12)
+
+        XCTAssertEqual(horoscope.sign, .scorpio)
+        XCTAssertEqual(horoscope.paragraphs.count, 4)
+
+        let fullText = horoscope.paragraphs.joined(separator: " ")
+        let wordCount = fullText
+            .split { $0.isWhitespace || $0.isNewline }
+            .count
+
+        XCTAssertGreaterThanOrEqual(wordCount, 110)
+        XCTAssertLessThanOrEqual(wordCount, 220)
+        XCTAssertTrue(fullText.localizedCaseInsensitiveContains("Escorpio") || fullText.localizedCaseInsensitiveContains("Scorpio"))
+        XCTAssertTrue(fullText.localizedCaseInsensitiveContains("Tauro") || fullText.localizedCaseInsensitiveContains("Taurus"))
+    }
 }

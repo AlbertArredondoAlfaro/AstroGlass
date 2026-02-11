@@ -6,8 +6,7 @@ struct MainTabView: View {
             Tab(String(localized: "tab.week"), systemImage: "sparkles") {
                 NavigationStack {
                     WeeklyView()
-                        .navigationTitle(String(localized: "weekly.title"))
-                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbar(.hidden, for: .navigationBar)
                 }
             }
             Tab(String(localized: "tab.signs"), systemImage: "circle.grid.2x2") {

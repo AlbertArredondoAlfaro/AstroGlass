@@ -50,18 +50,7 @@
 "notification.weekly.title" = "Tu horóscopo semanal ya está listo ✨";
 "notification.weekly.body" = "Abre AstroGlass y lee tu guía cósmica.";
 
-"weekly.theme.1" = "quiet alignment";
-"weekly.theme.2" = "creative ignition";
-"weekly.theme.3" = "emotional cleansing";
-"weekly.theme.4" = "bold choices";
-"weekly.theme.5" = "gentle healing";
-"weekly.theme.6" = "sacred boundaries";
-"weekly.theme.7" = "new opportunities";
-"weekly.theme.8" = "inner clarity";
 
-"horoscope.template.1" = "This week, %@, your %@ nature awakens under %@. Slow down, listen inward, and let your intuition choose the pace.";
-"horoscope.template.2" = "Your gift of %@ opens luminous doors, while %@ asks for awareness. The key vibration now is %@.";
-"horoscope.template.3" = "Mantra: %@. Move through the week as %@: centered, radiant, and intentional.";
 
 "element.fire" = "Fire";
 "element.earth" = "Earth";
@@ -221,3 +210,91 @@
 "onboarding.city.confirm" = "Usar esta ciudad";
 "onboarding.city.confirmed" = "Ciudad reconocida";
 "onboarding.city.coords" = "Coordenadas";
+"weekly.sun.short" = "Sol";
+"weekly.asc.short" = "Asc";
+"weekly.sun.full" = "Signo solar";
+"weekly.asc.full" = "Ascendente";
+"weekly.forecast.title" = "Previsión semanal";
+"weekly.forecast.empty" = "Tu previsión aparecerá aquí en un momento.";
+
+"weekly.rising" = "Ascendente";
+"weekly.rising.approx" = "El ascendente es aproximado.";
+"weekly.footer" = "Deja que el cosmos abra nuevos caminos mientras avanzas con intención.";
+
+
+
+"element.fire" = "Fuego";
+"element.earth" = "Tierra";
+"element.air" = "Aire";
+"element.water" = "Agua";
+
+"ruler.mars" = "Marte";
+"ruler.venus" = "Venus";
+"ruler.mercury" = "Mercurio";
+"ruler.moon" = "Luna";
+"ruler.sun" = "Sol";
+"ruler.pluto" = "Plutón";
+"ruler.jupiter" = "Júpiter";
+"ruler.saturn" = "Saturno";
+"ruler.uranus" = "Urano";
+"ruler.neptune" = "Neptuno";
+
+"sign.aries.name" = "Aries";
+"sign.aries.gift" = "iniciación valiente";
+"sign.aries.shadow" = "impaciencia";
+"sign.aries.mantra" = "Empiezo con valentía sagrada";
+
+"sign.taurus.name" = "Tauro";
+"sign.taurus.gift" = "devoción constante";
+"sign.taurus.shadow" = "apego terco";
+"sign.taurus.mantra" = "Construyo belleza que perdura";
+
+"sign.gemini.name" = "Géminis";
+"sign.gemini.gift" = "inteligencia curiosa";
+"sign.gemini.shadow" = "foco disperso";
+"sign.gemini.mantra" = "Conecto y transformo a través de las palabras";
+
+"sign.cancer.name" = "Cáncer";
+"sign.cancer.gift" = "cuidado empático";
+"sign.cancer.shadow" = "retirada defensiva";
+"sign.cancer.mantra" = "Nutro y recibo";
+
+"sign.leo.name" = "Leo";
+"sign.leo.gift" = "confianza radiante";
+"sign.leo.shadow" = "armadura del ego";
+"sign.leo.mantra" = "Brillo e inspiro";
+
+"sign.virgo.name" = "Virgo";
+"sign.virgo.gift" = "discernimiento preciso";
+"sign.virgo.shadow" = "perfeccionismo";
+"sign.virgo.mantra" = "Refino con amabilidad";
+
+"sign.libra.name" = "Libra";
+"sign.libra.gift" = "visión armónica";
+"sign.libra.shadow" = "indecisión";
+"sign.libra.mantra" = "Elijo equilibrio con verdad";
+
+"sign.scorpio.name" = "Escorpio";
+"sign.scorpio.gift" = "profundidad transformadora";
+"sign.scorpio.shadow" = "control";
+"sign.scorpio.mantra" = "Confío en el cambio profundo";
+
+"sign.sagittarius.name" = "Sagitario";
+"sign.sagittarius.gift" = "visión expansiva";
+"sign.sagittarius.shadow" = "libertad imprudente";
+"sign.sagittarius.mantra" = "Busco la verdad con alegría";
+
+"sign.capricorn.name" = "Capricornio";
+"sign.capricorn.gift" = "maestría duradera";
+"sign.capricorn.shadow" = "rigidez";
+"sign.capricorn.mantra" = "Asciendo con integridad";
+
+"sign.aquarius.name" = "Acuario";
+"sign.aquarius.gift" = "originalidad visionaria";
+"sign.aquarius.shadow" = "desapego";
+"sign.aquarius.mantra" = "Innovo para el colectivo";
+
+"sign.pisces.name" = "Piscis";
+"sign.pisces.gift" = "compasión mística";
+"sign.pisces.shadow" = "evasión";
+"sign.pisces.mantra" = "Fluyo con gracia";
