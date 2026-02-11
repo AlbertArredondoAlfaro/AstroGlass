@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0242F5C4074AC33E92B036FD /* ZodiacCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73412F6B235F0758BE7147C /* ZodiacCalculator.swift */; };
+		05D56784B4E822AD19CBCF5F /* AppCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16F01CAC9488AF46874D96B /* AppCardStyle.swift */; };
+		07DBBBA82C358DC327DBB6AF /* AstroGlassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93F2E92CF930C607662F2B7 /* AstroGlassApp.swift */; };
+		14DC8EEFBFC64B6A3A9F7832 /* GlowSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9E5502BC65AADBE7669197 /* GlowSymbolView.swift */; };
+		1BC82D25A0762C0AB8492433 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07470A12566ED5B456494DDF /* MainTabView.swift */; };
+		2622D36BA0BC18F641CC1A72 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640B2831CF686343E3336ED8 /* UserProfile.swift */; };
+		27CA59D767FDE661CA1E7B52 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E7188F2665D8C82C29441 /* City.swift */; };
+		284D0495AD553BB121AE6677 /* AdService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581267BA80FDF74AB2858BC4 /* AdService.swift */; };
+		34AA27D8E9A32C4B60981AC1 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 80632BF08AF79906D6AA4AC9 /* GoogleMobileAds */; };
+		378B2AF12DD1D2BD131DD118 /* OnboardingFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309A469B36BCAFF443056302 /* OnboardingFlowTests.swift */; };
+		480C8399F9A60B63864CA721 /* CosmicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8555B9BEC3E995837BD6C282 /* CosmicBackgroundView.swift */; };
+		4ADBA01C996E9086D5044283 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456654B9039C02FCB1A02F24 /* GlassCard.swift */; };
+		4C4C8DF9969248708C1EEB19 /* ZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCC6628D7DD8B88560B4EF6 /* ZodiacSign.swift */; };
+		4C95978FF8ECBEF7DCB178C3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9C4107D411825FD15840DA /* OnboardingView.swift */; };
+		4EE789FA567F9871EE168054 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFF95BEFA2EFE21DE98596AF /* InfoPlist.strings */; };
+		4FF4DFCB6B05EAE511EE7F3E /* CityLookupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07030EC150F75D55F81BE08 /* CityLookupService.swift */; };
+		51E8F9B998E3BFCFC8CD9CB7 /* SignsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D362B28D0466251262C85 /* SignsGridView.swift */; };
+		527C7342A8759D91C4DEA807 /* CityLookupServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446672CA973F7F78DDDCFEC6 /* CityLookupServiceTests.swift */; };
+		52945B94FCA2748600D85FF4 /* WeeklyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574117BC226AD41B52F05A57 /* WeeklyView.swift */; };
+		5476D970E6E0C35474AA83B6 /* Date+BirthTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA40716F7A7EBDEB50A8A9 /* Date+BirthTime.swift */; };
+		5494879F1752CE62B7D93DBF /* HoroscopeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9748FAC5F39F25A4EDFB /* HoroscopeService.swift */; };
+		5830F0FFD28EC7D12A54613A /* ParticleBurstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD08FEF2E4F6548642C6F8 /* ParticleBurstView.swift */; };
+		5A58A5F16FD2E4AA9CFC50E4 /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E926B09C42578102BD30F /* PurchaseService.swift */; };
+		5DB5594E144AAB0560D0F1BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D957E31D0A2BC860EDAD1BDE /* Localizable.strings */; };
+		5E14D827FA7B6E74CE488CFB /* AdBannerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2293A012BAF853A2B2261B /* AdBannerContainerView.swift */; };
+		6B8D9599672156C6F46F945E /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4943AC0F2986C1693C08F5 /* Horoscope.swift */; };
+		74DF61A1E508CEDD8543C1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D600367BCF53527A27AAFE1D /* Assets.xcassets */; };
+		7F273FE400597F1C3F391FBC /* AppButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7280CDA3576D13D9C8E3754 /* AppButtonStyles.swift */; };
+		84C15C34C1B5C4D770746A2A /* AstroGlassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE9784F0D685F0E500EA63 /* AstroGlassTests.swift */; };
+		8E771AAEA76E1F8F1790FB37 /* DefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86248D0E2020617B9086D9FC /* DefaultsKeys.swift */; };
+		91D4A32EBB75699D7FD0429B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A56C5897160FB8E437BB3F4 /* ProfileView.swift */; };
+		9941C5F030371D1C171BFB54 /* SignDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0309E3F15A4B699BC3D6554F /* SignDetailView.swift */; };
+		9D8EF9E478BC61E1D0048595 /* AscendantCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B63234779E237FE703C98DD /* AscendantCalculator.swift */; };
+		A000A528455DB42EC6BFD122 /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE340F1E4266D7B2D673DE1 /* ProfileEditView.swift */; };
+		A7C2FCB44A6921FCF4F3016D /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0980FCC07DA9F4A73D369A17 /* AppTheme.swift */; };
+		B9EEA3E79EFB4818295A32DF /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CBD06672A7263CD471058F /* OnboardingFlow.swift */; };
+		BC50DA65AF0656698F0783B5 /* StarfieldCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68645A991F2A6C1D62E78117 /* StarfieldCanvasView.swift */; };
+		BF0E8FEE4A0DAA25CFEC454E /* ShimmerPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0E8DBE14B2EBC9CE97115 /* ShimmerPlaceholderView.swift */; };
+		CE72EA936DE771B3CB5C56A4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03DF00F3AD3EF6AB5EDDBEC /* RootView.swift */; };
+		DC76D03B1597CB458CC7D5AB /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD8611EFF5021791D1D7E1 /* AppModel.swift */; };
+		EF3CBD86B1D783378AE92CDA /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543540BFE5FB907B9B4612D4 /* NotificationScheduler.swift */; };
+		F330180A1E23EF1A50885E6C /* UIApplication+TopMost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC153A7584A418288E4FFA8B /* UIApplication+TopMost.swift */; };
+		F42AF5D159081D26F798651C /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F9828F772900C0835CF06D /* AdBannerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E681DEACDE08197F54C30636 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAFC67425C20E70F6891B933 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540CF830CC677EFF1B3FA824;
+			remoteInfo = AstroGlass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005182772DDB0540865C8575 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0309E3F15A4B699BC3D6554F /* SignDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignDetailView.swift; sourceTree = "<group>"; };
+		055E7188F2665D8C82C29441 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		05F9828F772900C0835CF06D /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
+		0631B02EF05ABB47647192C2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		07470A12566ED5B456494DDF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		0980FCC07DA9F4A73D369A17 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		10694AB60A1ADC6292B25FC7 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1A6335A0BF4C2DA96FE27E2A /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1F2FF30871FA0CA4E21FFA8D /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		23FA40716F7A7EBDEB50A8A9 /* Date+BirthTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+BirthTime.swift"; sourceTree = "<group>"; };
+		265892C018FED3D2EF149765 /* AstroGlassTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AstroGlassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		309A469B36BCAFF443056302 /* OnboardingFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowTests.swift; sourceTree = "<group>"; };
+		387CE35A8F916EA8B3235DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		38B50D328DEF2B695B2A76E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		435F879DCBBB977EC4F067C2 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
+		446672CA973F7F78DDDCFEC6 /* CityLookupServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityLookupServiceTests.swift; sourceTree = "<group>"; };
+		456654B9039C02FCB1A02F24 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
+		4B9D362B28D0466251262C85 /* SignsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignsGridView.swift; sourceTree = "<group>"; };
+		4C9E5502BC65AADBE7669197 /* GlowSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowSymbolView.swift; sourceTree = "<group>"; };
+		53FD08FEF2E4F6548642C6F8 /* ParticleBurstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleBurstView.swift; sourceTree = "<group>"; };
+		543540BFE5FB907B9B4612D4 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		56CBD06672A7263CD471058F /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
+		574117BC226AD41B52F05A57 /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
+		581267BA80FDF74AB2858BC4 /* AdService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdService.swift; sourceTree = "<group>"; };
+		640B2831CF686343E3336ED8 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		68645A991F2A6C1D62E78117 /* StarfieldCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarfieldCanvasView.swift; sourceTree = "<group>"; };
+		6B63234779E237FE703C98DD /* AscendantCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscendantCalculator.swift; sourceTree = "<group>"; };
+		716BD1FA1B141BA56F963F1A /* AstroGlass.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AstroGlass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8555B9BEC3E995837BD6C282 /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
+		86248D0E2020617B9086D9FC /* DefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKeys.swift; sourceTree = "<group>"; };
+		8A56C5897160FB8E437BB3F4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		8CCC6628D7DD8B88560B4EF6 /* ZodiacSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSign.swift; sourceTree = "<group>"; };
+		933E926B09C42578102BD30F /* PurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
+		9764CCBD7A2E945DDB0E8A53 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A201DD714C218331F095892 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9DE340F1E4266D7B2D673DE1 /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
+		A07030EC150F75D55F81BE08 /* CityLookupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityLookupService.swift; sourceTree = "<group>"; };
+		A7280CDA3576D13D9C8E3754 /* AppButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyles.swift; sourceTree = "<group>"; };
+		A73412F6B235F0758BE7147C /* ZodiacCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacCalculator.swift; sourceTree = "<group>"; };
+		BAE8E9C2E7A6EF7D6665ED5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BCFD8611EFF5021791D1D7E1 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		D600367BCF53527A27AAFE1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA2293A012BAF853A2B2261B /* AdBannerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerContainerView.swift; sourceTree = "<group>"; };
+		DC153A7584A418288E4FFA8B /* UIApplication+TopMost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopMost.swift"; sourceTree = "<group>"; };
+		DC9C4107D411825FD15840DA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E6AE9784F0D685F0E500EA63 /* AstroGlassTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroGlassTests.swift; sourceTree = "<group>"; };
+		EA4943AC0F2986C1693C08F5 /* Horoscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horoscope.swift; sourceTree = "<group>"; };
+		F03DF00F3AD3EF6AB5EDDBEC /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F16F01CAC9488AF46874D96B /* AppCardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCardStyle.swift; sourceTree = "<group>"; };
+		F7E0E8DBE14B2EBC9CE97115 /* ShimmerPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerPlaceholderView.swift; sourceTree = "<group>"; };
+		F8AE9748FAC5F39F25A4EDFB /* HoroscopeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeService.swift; sourceTree = "<group>"; };
+		F93F2E92CF930C607662F2B7 /* AstroGlassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroGlassApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DCBD84D971A67DB0D31D9C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34AA27D8E9A32C4B60981AC1 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A8AF270C9B2DFA098C66AE8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				055E7188F2665D8C82C29441 /* City.swift */,
+				EA4943AC0F2986C1693C08F5 /* Horoscope.swift */,
+				640B2831CF686343E3336ED8 /* UserProfile.swift */,
+				8CCC6628D7DD8B88560B4EF6 /* ZodiacSign.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D16A323D52F93D7395A88DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D600367BCF53527A27AAFE1D /* Assets.xcassets */,
+				387CE35A8F916EA8B3235DB9 /* Info.plist */,
+				BFF95BEFA2EFE21DE98596AF /* InfoPlist.strings */,
+				D957E31D0A2BC860EDAD1BDE /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		324A00B017948BE3CDD2F8E5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				581267BA80FDF74AB2858BC4 /* AdService.swift */,
+				6B63234779E237FE703C98DD /* AscendantCalculator.swift */,
+				A07030EC150F75D55F81BE08 /* CityLookupService.swift */,
+				86248D0E2020617B9086D9FC /* DefaultsKeys.swift */,
+				F8AE9748FAC5F39F25A4EDFB /* HoroscopeService.swift */,
+				543540BFE5FB907B9B4612D4 /* NotificationScheduler.swift */,
+				933E926B09C42578102BD30F /* PurchaseService.swift */,
+				A73412F6B235F0758BE7147C /* ZodiacCalculator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		35F494B3CD9F79ECD2DFA72E = {
+			isa = PBXGroup;
+			children = (
+				3D73D4AD55BE511436F4EB14 /* AstroGlass */,
+				809F8FA0027FF18E2E6408E0 /* AstroGlassTests */,
+				4F6C3E6E517CA6EFC5E5E2BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D73D4AD55BE511436F4EB14 /* AstroGlass */ = {
+			isa = PBXGroup;
+			children = (
+				BCFD8611EFF5021791D1D7E1 /* AppModel.swift */,
+				F93F2E92CF930C607662F2B7 /* AstroGlassApp.swift */,
+				496493A48B1EAC418471B859 /* Extensions */,
+				1A8AF270C9B2DFA098C66AE8 /* Models */,
+				2D16A323D52F93D7395A88DD /* Resources */,
+				324A00B017948BE3CDD2F8E5 /* Services */,
+				B9CF5B4C6AAA99EBBC0FFEFB /* Theme */,
+				B731EFA84ADCAFDB44C75E33 /* Views */,
+			);
+			path = AstroGlass;
+			sourceTree = "<group>";
+		};
+		496493A48B1EAC418471B859 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				23FA40716F7A7EBDEB50A8A9 /* Date+BirthTime.swift */,
+				DC153A7584A418288E4FFA8B /* UIApplication+TopMost.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4E03248FDE66CC1A4BF27DF9 /* Signs */ = {
+			isa = PBXGroup;
+			children = (
+				0309E3F15A4B699BC3D6554F /* SignDetailView.swift */,
+				4B9D362B28D0466251262C85 /* SignsGridView.swift */,
+			);
+			path = Signs;
+			sourceTree = "<group>";
+		};
+		4F6C3E6E517CA6EFC5E5E2BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				716BD1FA1B141BA56F963F1A /* AstroGlass.app */,
+				265892C018FED3D2EF149765 /* AstroGlassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53A44C240CE5C55F1F6C20E8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				56CBD06672A7263CD471058F /* OnboardingFlow.swift */,
+				DC9C4107D411825FD15840DA /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		809F8FA0027FF18E2E6408E0 /* AstroGlassTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6AE9784F0D685F0E500EA63 /* AstroGlassTests.swift */,
+				446672CA973F7F78DDDCFEC6 /* CityLookupServiceTests.swift */,
+				309A469B36BCAFF443056302 /* OnboardingFlowTests.swift */,
+			);
+			path = AstroGlassTests;
+			sourceTree = "<group>";
+		};
+		966704E91E895D9A9AE31D0B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DA2293A012BAF853A2B2261B /* AdBannerContainerView.swift */,
+				05F9828F772900C0835CF06D /* AdBannerView.swift */,
+				8555B9BEC3E995837BD6C282 /* CosmicBackgroundView.swift */,
+				456654B9039C02FCB1A02F24 /* GlassCard.swift */,
+				4C9E5502BC65AADBE7669197 /* GlowSymbolView.swift */,
+				53FD08FEF2E4F6548642C6F8 /* ParticleBurstView.swift */,
+				F7E0E8DBE14B2EBC9CE97115 /* ShimmerPlaceholderView.swift */,
+				68645A991F2A6C1D62E78117 /* StarfieldCanvasView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B731EFA84ADCAFDB44C75E33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07470A12566ED5B456494DDF /* MainTabView.swift */,
+				F03DF00F3AD3EF6AB5EDDBEC /* RootView.swift */,
+				966704E91E895D9A9AE31D0B /* Components */,
+				53A44C240CE5C55F1F6C20E8 /* Onboarding */,
+				DA3E0F2C6A8D7BFE8F2AB352 /* Profile */,
+				4E03248FDE66CC1A4BF27DF9 /* Signs */,
+				EE526B654EFE42F872D46AE9 /* Weekly */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9CF5B4C6AAA99EBBC0FFEFB /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A7280CDA3576D13D9C8E3754 /* AppButtonStyles.swift */,
+				F16F01CAC9488AF46874D96B /* AppCardStyle.swift */,
+				0980FCC07DA9F4A73D369A17 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		DA3E0F2C6A8D7BFE8F2AB352 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9DE340F1E4266D7B2D673DE1 /* ProfileEditView.swift */,
+				8A56C5897160FB8E437BB3F4 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EE526B654EFE42F872D46AE9 /* Weekly */ = {
+			isa = PBXGroup;
+			children = (
+				574117BC226AD41B52F05A57 /* WeeklyView.swift */,
+			);
+			path = Weekly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		540CF830CC677EFF1B3FA824 /* AstroGlass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78F90A96686B7724718D2302 /* Build configuration list for PBXNativeTarget "AstroGlass" */;
+			buildPhases = (
+				D88785D9E94DDBAE26BF3173 /* Sources */,
+				337C67044AD9EE4873FC58BA /* Resources */,
+				2DCBD84D971A67DB0D31D9C3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstroGlass;
+			packageProductDependencies = (
+				80632BF08AF79906D6AA4AC9 /* GoogleMobileAds */,
+			);
+			productName = AstroGlass;
+			productReference = 716BD1FA1B141BA56F963F1A /* AstroGlass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCDF25E67D495311F439F28C /* AstroGlassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8362D0FAF4E8F0DA306A2D29 /* Build configuration list for PBXNativeTarget "AstroGlassTests" */;
+			buildPhases = (
+				C0D5A06320083C79E31117AD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				565DABE602581E529F12476F /* PBXTargetDependency */,
+			);
+			name = AstroGlassTests;
+			packageProductDependencies = (
+			);
+			productName = AstroGlassTests;
+			productReference = 265892C018FED3D2EF149765 /* AstroGlassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAFC67425C20E70F6891B933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					540CF830CC677EFF1B3FA824 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FD065FA51599971D6EF88304 /* Build configuration list for PBXProject "AstroGlass" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ca,
+				de,
+				en,
+				es,
+				fr,
+			);
+			mainGroup = 35F494B3CD9F79ECD2DFA72E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				54FADA900185B2DBCDAB9A56 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				540CF830CC677EFF1B3FA824 /* AstroGlass */,
+				DCDF25E67D495311F439F28C /* AstroGlassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		337C67044AD9EE4873FC58BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DF61A1E508CEDD8543C1CB /* Assets.xcassets in Resources */,
+				4EE789FA567F9871EE168054 /* InfoPlist.strings in Resources */,
+				5DB5594E144AAB0560D0F1BA /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0D5A06320083C79E31117AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C15C34C1B5C4D770746A2A /* AstroGlassTests.swift in Sources */,
+				527C7342A8759D91C4DEA807 /* CityLookupServiceTests.swift in Sources */,
+				378B2AF12DD1D2BD131DD118 /* OnboardingFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88785D9E94DDBAE26BF3173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E14D827FA7B6E74CE488CFB /* AdBannerContainerView.swift in Sources */,
+				F42AF5D159081D26F798651C /* AdBannerView.swift in Sources */,
+				284D0495AD553BB121AE6677 /* AdService.swift in Sources */,
+				7F273FE400597F1C3F391FBC /* AppButtonStyles.swift in Sources */,
+				05D56784B4E822AD19CBCF5F /* AppCardStyle.swift in Sources */,
+				DC76D03B1597CB458CC7D5AB /* AppModel.swift in Sources */,
+				A7C2FCB44A6921FCF4F3016D /* AppTheme.swift in Sources */,
+				9D8EF9E478BC61E1D0048595 /* AscendantCalculator.swift in Sources */,
+				07DBBBA82C358DC327DBB6AF /* AstroGlassApp.swift in Sources */,
+				27CA59D767FDE661CA1E7B52 /* City.swift in Sources */,
+				4FF4DFCB6B05EAE511EE7F3E /* CityLookupService.swift in Sources */,
+				480C8399F9A60B63864CA721 /* CosmicBackgroundView.swift in Sources */,
+				5476D970E6E0C35474AA83B6 /* Date+BirthTime.swift in Sources */,
+				8E771AAEA76E1F8F1790FB37 /* DefaultsKeys.swift in Sources */,
+				4ADBA01C996E9086D5044283 /* GlassCard.swift in Sources */,
+				14DC8EEFBFC64B6A3A9F7832 /* GlowSymbolView.swift in Sources */,
+				6B8D9599672156C6F46F945E /* Horoscope.swift in Sources */,
+				5494879F1752CE62B7D93DBF /* HoroscopeService.swift in Sources */,
+				1BC82D25A0762C0AB8492433 /* MainTabView.swift in Sources */,
+				EF3CBD86B1D783378AE92CDA /* NotificationScheduler.swift in Sources */,
+				B9EEA3E79EFB4818295A32DF /* OnboardingFlow.swift in Sources */,
+				4C95978FF8ECBEF7DCB178C3 /* OnboardingView.swift in Sources */,
+				5830F0FFD28EC7D12A54613A /* ParticleBurstView.swift in Sources */,
+				A000A528455DB42EC6BFD122 /* ProfileEditView.swift in Sources */,
+				91D4A32EBB75699D7FD0429B /* ProfileView.swift in Sources */,
+				5A58A5F16FD2E4AA9CFC50E4 /* PurchaseService.swift in Sources */,
+				CE72EA936DE771B3CB5C56A4 /* RootView.swift in Sources */,
+				BF0E8FEE4A0DAA25CFEC454E /* ShimmerPlaceholderView.swift in Sources */,
+				9941C5F030371D1C171BFB54 /* SignDetailView.swift in Sources */,
+				51E8F9B998E3BFCFC8CD9CB7 /* SignsGridView.swift in Sources */,
+				BC50DA65AF0656698F0783B5 /* StarfieldCanvasView.swift in Sources */,
+				F330180A1E23EF1A50885E6C /* UIApplication+TopMost.swift in Sources */,
+				2622D36BA0BC18F641CC1A72 /* UserProfile.swift in Sources */,
+				52945B94FCA2748600D85FF4 /* WeeklyView.swift in Sources */,
+				0242F5C4074AC33E92B036FD /* ZodiacCalculator.swift in Sources */,
+				4C4C8DF9969248708C1EEB19 /* ZodiacSign.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		565DABE602581E529F12476F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 540CF830CC677EFF1B3FA824 /* AstroGlass */;
+			targetProxy = E681DEACDE08197F54C30636 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFF95BEFA2EFE21DE98596AF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				005182772DDB0540865C8575 /* ca */,
+				9764CCBD7A2E945DDB0E8A53 /* de */,
+				BAE8E9C2E7A6EF7D6665ED5D /* en */,
+				9A201DD714C218331F095892 /* es */,
+				1F2FF30871FA0CA4E21FFA8D /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D957E31D0A2BC860EDAD1BDE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				435F879DCBBB977EC4F067C2 /* ca */,
+				1A6335A0BF4C2DA96FE27E2A /* de */,
+				38B50D328DEF2B695B2A76E9 /* en */,
+				0631B02EF05ABB47647192C2 /* es */,
+				10694AB60A1ADC6292B25FC7 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C403640D59977916D10FD60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.idreamstudios.astroglass.tests;
+				PRODUCT_MODULE_NAME = AstroGlassTests;
+				PRODUCT_NAME = AstroGlassTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroGlass.app/AstroGlass";
+			};
+			name = Debug;
+		};
+		88FADD09C77D7696CC351F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AD9CF7FD3D254EBA054A734F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AstroGlass/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.idreamstudios.astroglass;
+				PRODUCT_NAME = AstroGlass;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B664E618C8F081D650E922F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.idreamstudios.astroglass.tests;
+				PRODUCT_MODULE_NAME = AstroGlassTests;
+				PRODUCT_NAME = AstroGlassTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroGlass.app/AstroGlass";
+			};
+			name = Release;
+		};
+		C0D3095508830804279D9F33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E5796FA8AEEFFD5BB028376B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = AstroGlass/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.idreamstudios.astroglass;
+				PRODUCT_NAME = AstroGlass;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78F90A96686B7724718D2302 /* Build configuration list for PBXNativeTarget "AstroGlass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5796FA8AEEFFD5BB028376B /* Debug */,
+				AD9CF7FD3D254EBA054A734F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8362D0FAF4E8F0DA306A2D29 /* Build configuration list for PBXNativeTarget "AstroGlassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C403640D59977916D10FD60 /* Debug */,
+				B664E618C8F081D650E922F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FD065FA51599971D6EF88304 /* Build configuration list for PBXProject "AstroGlass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88FADD09C77D7696CC351F57 /* Debug */,
+				C0D3095508830804279D9F33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54FADA900185B2DBCDAB9A56 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80632BF08AF79906D6AA4AC9 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54FADA900185B2DBCDAB9A56 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BAFC67425C20E70F6891B933 /* Project object */;
+}
