@@ -13,6 +13,7 @@ struct OnboardingView: View {
     @State private var cityName = ""
     @State private var cityErrorKey: String?
     @State private var isResolvingCity = false
+    @State private var resolvedCity: City?
 
     private var cardMaxWidth: CGFloat {
         horizontalSizeClass == .regular ? AppTheme.Metrics.cardMaxWidthRegular : AppTheme.Metrics.cardMaxWidthCompact
@@ -48,7 +49,7 @@ struct OnboardingView: View {
     }
 
     private var nextButtonKey: String {
-        step.nextButtonKey
+        return step.nextButtonKey
     }
 
     var body: some View {
@@ -133,6 +134,10 @@ struct OnboardingView: View {
                                     .textInputAutocapitalization(.words)
                                     .submitLabel(.done)
                                     .onSubmit(continueToNextStep)
+                                    .onChange(of: cityName) { _, _ in
+                                        resolvedCity = nil
+                                        cityErrorKey = nil
+                                    }
                                     .padding(.horizontal, 14)
                                     .frame(height: AppTheme.Metrics.textFieldHeight)
                                     .background(.thinMaterial, in: RoundedRectangle(cornerRadius: AppTheme.Metrics.fieldCornerRadius, style: .continuous))
@@ -160,6 +165,33 @@ struct OnboardingView: View {
                                         .font(AppTheme.Typography.footnote)
                                         .foregroundStyle(.red.opacity(0.9))
                                         .fixedSize(horizontal: false, vertical: true)
+                                }
+
+                                if let resolvedCity {
+                                    HStack(alignment: .top, spacing: 10) {
+                                        Image(systemName: "checkmark.circle.fill")
+                                            .foregroundStyle(AppTheme.Colors.accentLilac)
+                                        VStack(alignment: .leading, spacing: 4) {
+                                            Text(String(localized: "onboarding.city.confirmed"))
+                                                .font(AppTheme.Typography.headline)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                            Text("\(resolvedCity.name), \(resolvedCity.country)")
+                                                .font(AppTheme.Typography.body)
+                                                .foregroundStyle(.white.opacity(0.95))
+                                                .multilineTextAlignment(.leading)
+                                                .lineLimit(2)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                        }
+                                        .layoutPriority(1)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                    }
+                                    .padding(12)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                    .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                            .stroke(AppTheme.Colors.accentLilac.opacity(0.6), lineWidth: 1)
+                                    )
                                 }
                             }
                         }
@@ -210,7 +242,11 @@ struct OnboardingView: View {
             }
         } else {
             Task {
-                await finishOnboarding()
+                if let resolvedCity {
+                    finishOnboarding(with: resolvedCity)
+                } else {
+                    await resolveCityForConfirmation()
+                }
             }
         }
     }
@@ -223,21 +259,26 @@ struct OnboardingView: View {
         }
     }
 
-    private func finishOnboarding() async {
+    private func resolveCityForConfirmation() async {
         guard !isResolvingCity else { return }
 
         cityErrorKey = nil
+        resolvedCity = nil
         isResolvingCity = true
         defer { isResolvingCity = false }
 
         do {
             let city = try await cityLookupService.resolveCity(named: cityName)
-            let birthTimeValue: BirthTime? = hasExactTime ? birthTime.toBirthTime : nil
-            model.updateProfile(name: trimmedName, birthDate: birthDate, birthTime: birthTimeValue, city: city)
+            resolvedCity = city
         } catch let error as CityLookupService.LookupError {
             cityErrorKey = error.localizedKey
         } catch {
             cityErrorKey = CityLookupService.LookupError.unknown.localizedKey
         }
+    }
+
+    private func finishOnboarding(with city: City) {
+        let birthTimeValue: BirthTime? = hasExactTime ? birthTime.toBirthTime : nil
+        model.updateProfile(name: trimmedName, birthDate: birthDate, birthTime: birthTimeValue, city: city)
     }
 }

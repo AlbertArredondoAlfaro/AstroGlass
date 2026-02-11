@@ -10,4 +10,20 @@ final class AstroGlassTests: XCTestCase {
         XCTAssertEqual(ZodiacCalculator.sunSign(for: ariesDate), .aries)
         XCTAssertEqual(ZodiacCalculator.sunSign(for: taurusDate), .taurus)
     }
+
+    func testAscendantForVilafrancaCase() {
+        let calendar = Calendar(identifier: .gregorian)
+        let birthDate = calendar.date(from: DateComponents(year: 1985, month: 11, day: 19))!
+        let time = BirthTime(hour: 17, minute: 10)
+
+        let rising = AscendantCalculator.risingSign(
+            birthDate: birthDate,
+            birthTime: time,
+            latitude: 41.3462,
+            longitude: 1.6971,
+            timeZoneId: "Europe/Madrid"
+        )
+
+        XCTAssertEqual(rising, .taurus)
+    }
 }
