@@ -1,9 +1,4 @@
 {
-  "openingTemplate": "Starting Monday, you'll feel it right away: this week's theme —[THEME]— helps you cut through the noise and make cleaner decisions.",
-  "manifestationTemplate": "With [SUN_NAME] as your Sun and [RISING_NAME] as your Rising, this energy fits you well: you know what matters and how to move it forward without drama. [PROFILE_BASE] Your sweet spot lands between Tuesday afternoon and Thursday morning, especially for sorting priorities and having one overdue conversation.",
-  "adviceTemplate": "Friendly reality check: choose two measurable goals and get them done before Friday. If someone pushes your buttons, don't fire back instantly; take a beat, then answer from a calmer and smarter place.",
-  "closingTemplate": "By the weekend, you'll feel lighter, clearer, and quietly proud of how you handled things.",
-  "profileBaseTemplate": "At your core, this combo is [SUN_CORE], expressed outwardly through a [RISING_STYLE] style.",
   "themes": [
     "quiet alignment",
     "creative ignition",
@@ -15,31 +10,245 @@
     "inner clarity"
   ],
   "sunCore": {
-    "aries": "bold and direct momentum",
-    "taurus": "steady calm and practical strength",
-    "gemini": "fast and adaptable thinking",
-    "cancer": "emotional intuition and protective focus",
-    "leo": "warm creative leadership",
-    "virgo": "precision, order, and continuous improvement",
-    "libra": "balanced perspective and diplomacy",
-    "scorpio": "strategic intensity and depth",
-    "sagittarius": "expansion, honesty, and meaning-seeking",
-    "capricorn": "discipline, ambition, and result focus",
-    "aquarius": "mental independence and innovative vision",
-    "pisces": "sensitivity, empathy, and creativity"
+    "aries": [
+      "bold initiative to open new paths",
+      "natural leadership when things begin",
+      "fast decision-making in key moments"
+    ],
+    "taurus": [
+      "patient consistency for long-term building",
+      "practical sense to protect resources",
+      "steady calm when others speed up"
+    ],
+    "gemini": [
+      "mental agility to connect ideas",
+      "communicative talent that links people",
+      "active curiosity that spots opportunities"
+    ],
+    "cancer": [
+      "refined emotional intuition",
+      "loyal care for close relationships",
+      "sensitivity to what is left unsaid"
+    ],
+    "leo": [
+      "creative presence that inspires",
+      "courage to be seen without masks",
+      "generosity when stepping into leadership"
+    ],
+    "virgo": [
+      "sharp eye for improving systems",
+      "functional order that creates calm",
+      "useful discipline that turns chaos into clarity"
+    ],
+    "libra": [
+      "elegant diplomacy in complex dynamics",
+      "genuine drive toward fair balance",
+      "mediation talent without losing truth"
+    ],
+    "scorpio": [
+      "strategic intensity with precision",
+      "deep capacity for transformation",
+      "accurate reading of hidden motives"
+    ],
+    "sagittarius": [
+      "expansive vision that opens horizons",
+      "honesty that activates decisions",
+      "instinct for meaningful direction"
+    ],
+    "capricorn": [
+      "sustained discipline aimed at results",
+      "mature ambition with structural focus",
+      "strong responsibility in key goals"
+    ],
+    "aquarius": [
+      "mental independence to think differently",
+      "innovative outlook toward the future",
+      "ability to break outdated patterns"
+    ],
+    "pisces": [
+      "subtle empathy with deep sensitivity",
+      "creative imagination for fresh solutions",
+      "spiritual connection that calms and guides"
+    ]
   },
   "risingStyle": {
-    "aries": "decisive and fast-moving",
-    "taurus": "steady and grounded",
-    "gemini": "curious and communicative",
-    "cancer": "protective and emotionally aware",
-    "leo": "visible, warm, and confident",
-    "virgo": "methodical and detail-oriented",
-    "libra": "harmonizing and polished",
-    "scorpio": "intense and private",
-    "sagittarius": "open and exploratory",
-    "capricorn": "serious and goal-driven",
-    "aquarius": "independent and original",
-    "pisces": "empathetic and fluid"
-  }
+    "aries": [
+      "direct first impact with no detours",
+      "impulsive reaction under social pressure",
+      "brave initiative in group dynamics"
+    ],
+    "taurus": [
+      "steady presence that feels safe",
+      "rigid resistance when uncomfortable",
+      "calm consistency in follow-through"
+    ],
+    "gemini": [
+      "light and talkative social entry",
+      "verbal restlessness under tension",
+      "smart flexibility for quick adaptation"
+    ],
+    "cancer": [
+      "warm and protective first impression",
+      "emotional withdrawal in hostile settings",
+      "ability to care without overstepping"
+    ],
+    "leo": [
+      "visible charisma from the first minute",
+      "defensive pride when challenged",
+      "radiant confidence that lifts the room"
+    ],
+    "virgo": [
+      "organized and observant outer style",
+      "over-control in uncertain situations",
+      "quiet precision in practical details"
+    ],
+    "libra": [
+      "pleasant and conciliatory approach",
+      "overthinking in open conflict",
+      "natural harmonizing of opposite positions"
+    ],
+    "scorpio": [
+      "intense and private first presence",
+      "sharp defense when sensing threat",
+      "strategic depth in reading context"
+    ],
+    "sagittarius": [
+      "open and adventurous social energy",
+      "blunt honesty under stress",
+      "enthusiasm that mobilizes people"
+    ],
+    "capricorn": [
+      "reliable seriousness at first contact",
+      "hard self-pressure in demanding moments",
+      "mature consistency with commitments"
+    ],
+    "aquarius": [
+      "original and slightly detached style",
+      "emotional disconnect when overloaded",
+      "objective perspective that clarifies"
+    ],
+    "pisces": [
+      "empathetic and receptive aura",
+      "avoidance when the environment gets heavy",
+      "inspiring sensitivity in human contact"
+    ]
+  },
+  "openingTemplates": [
+    "Monday gives you a pretty clear message: [THEME] is your lane this week so trust that first decision that feels calm and solid.",
+    "Monday gives you a pretty clear message: [THEME] is your lane this week and your focus gets cleaner fast.",
+    "Monday gives you a pretty clear message: [THEME] is your lane this week without forcing anything.",
+    "Monday gives you a pretty clear message: [THEME] is your lane this week especially in the choices that actually shape your day.",
+    "From Monday on, [THEME] helps your head feel more ordered so trust that first decision that feels calm and solid.",
+    "From Monday on, [THEME] helps your head feel more ordered and your focus gets cleaner fast.",
+    "From Monday on, [THEME] helps your head feel more ordered without forcing anything.",
+    "From Monday on, [THEME] helps your head feel more ordered especially in the choices that actually shape your day.",
+    "This week opens with [THEME], and honestly it lands right on time so trust that first decision that feels calm and solid.",
+    "This week opens with [THEME], and honestly it lands right on time and your focus gets cleaner fast.",
+    "This week opens with [THEME], and honestly it lands right on time without forcing anything.",
+    "This week opens with [THEME], and honestly it lands right on time especially in the choices that actually shape your day.",
+    "As the week starts, [THEME] helps you separate what matters from noise so trust that first decision that feels calm and solid.",
+    "As the week starts, [THEME] helps you separate what matters from noise and your focus gets cleaner fast.",
+    "As the week starts, [THEME] helps you separate what matters from noise without forcing anything.",
+    "As the week starts, [THEME] helps you separate what matters from noise especially in the choices that actually shape your day.",
+    "From day one, [THEME] asks you to move with more intention so trust that first decision that feels calm and solid.",
+    "From day one, [THEME] asks you to move with more intention and your focus gets cleaner fast.",
+    "From day one, [THEME] asks you to move with more intention without forcing anything.",
+    "From day one, [THEME] asks you to move with more intention especially in the choices that actually shape your day.",
+    "This week begins with [THEME], and it really fits where you are so trust that first decision that feels calm and solid.",
+    "This week begins with [THEME], and it really fits where you are and your focus gets cleaner fast.",
+    "This week begins with [THEME], and it really fits where you are without forcing anything.",
+    "This week begins with [THEME], and it really fits where you are especially in the choices that actually shape your day."
+  ],
+  "manifestationTemplates": [
+    "With [SUN_NAME] as your Sun and [RISING_NAME] as your Rising, you get a strong mix of instinct and direction, and that's where [PROFILE_BASE]. Between Tuesday afternoon and Thursday morning, you have a strong window for one important conversation.",
+    "With [SUN_NAME] as your Sun and [RISING_NAME] as your Rising, you get a strong mix of instinct and direction, and in your case it works because [PROFILE_BASE]. Midweek gives you a perfect moment to reset priorities.",
+    "With [SUN_NAME] as your Sun and [RISING_NAME] as your Rising, you get a strong mix of instinct and direction. Also, [PROFILE_BASE]. Wednesday is ideal for unblocking what has been stuck.",
+    "With [SUN_NAME] as your Sun and [RISING_NAME] as your Rising, you get a strong mix of instinct and direction. What stands out is that [PROFILE_BASE]. Keep Thursday for decisions that make next week easier.",
+    "Your [SUN_NAME] core with [RISING_NAME] rising gives you clarity to decide and energy to execute, and that is exactly why [PROFILE_BASE]. Between Tuesday afternoon and Thursday morning, you have a strong window for one important conversation.",
+    "Your [SUN_NAME] core with [RISING_NAME] rising gives you clarity to decide and energy to execute. It also helps that [PROFILE_BASE]. Midweek gives you a perfect moment to reset priorities.",
+    "Your [SUN_NAME] core with [RISING_NAME] rising gives you clarity to decide and energy to execute, and that's where [PROFILE_BASE]. Wednesday is ideal for unblocking what has been stuck.",
+    "Your [SUN_NAME] core with [RISING_NAME] rising gives you clarity to decide and energy to execute, and in your case it works because [PROFILE_BASE]. Keep Thursday for decisions that make next week easier.",
+    "The [SUN_NAME] + [RISING_NAME] combo helps you read the room without losing your center. Also, [PROFILE_BASE]. Between Tuesday afternoon and Thursday morning, you have a strong window for one important conversation.",
+    "The [SUN_NAME] + [RISING_NAME] combo helps you read the room without losing your center. What stands out is that [PROFILE_BASE]. Midweek gives you a perfect moment to reset priorities.",
+    "The [SUN_NAME] + [RISING_NAME] combo helps you read the room without losing your center, and that is exactly why [PROFILE_BASE]. Wednesday is ideal for unblocking what has been stuck.",
+    "The [SUN_NAME] + [RISING_NAME] combo helps you read the room without losing your center. It also helps that [PROFILE_BASE]. Keep Thursday for decisions that make next week easier.",
+    "With [SUN_NAME] Sun and [RISING_NAME] Rising, this week feels more manageable than usual, and that's where [PROFILE_BASE]. Between Tuesday afternoon and Thursday morning, you have a strong window for one important conversation.",
+    "With [SUN_NAME] Sun and [RISING_NAME] Rising, this week feels more manageable than usual, and in your case it works because [PROFILE_BASE]. Midweek gives you a perfect moment to reset priorities.",
+    "With [SUN_NAME] Sun and [RISING_NAME] Rising, this week feels more manageable than usual. Also, [PROFILE_BASE]. Wednesday is ideal for unblocking what has been stuck.",
+    "With [SUN_NAME] Sun and [RISING_NAME] Rising, this week feels more manageable than usual. What stands out is that [PROFILE_BASE]. Keep Thursday for decisions that make next week easier.",
+    "Your [SUN_NAME]/[RISING_NAME] blend turns intention into motion with less friction, and that is exactly why [PROFILE_BASE]. Between Tuesday afternoon and Thursday morning, you have a strong window for one important conversation.",
+    "Your [SUN_NAME]/[RISING_NAME] blend turns intention into motion with less friction. It also helps that [PROFILE_BASE]. Midweek gives you a perfect moment to reset priorities.",
+    "Your [SUN_NAME]/[RISING_NAME] blend turns intention into motion with less friction, and that's where [PROFILE_BASE]. Wednesday is ideal for unblocking what has been stuck.",
+    "Your [SUN_NAME]/[RISING_NAME] blend turns intention into motion with less friction, and in your case it works because [PROFILE_BASE]. Keep Thursday for decisions that make next week easier.",
+    "This week rewards your [SUN_NAME] Sun + [RISING_NAME] Rising style: direct, but thoughtful. Also, [PROFILE_BASE]. Between Tuesday afternoon and Thursday morning, you have a strong window for one important conversation.",
+    "This week rewards your [SUN_NAME] Sun + [RISING_NAME] Rising style: direct, but thoughtful. What stands out is that [PROFILE_BASE]. Midweek gives you a perfect moment to reset priorities.",
+    "This week rewards your [SUN_NAME] Sun + [RISING_NAME] Rising style: direct, but thoughtful, and that is exactly why [PROFILE_BASE]. Wednesday is ideal for unblocking what has been stuck.",
+    "This week rewards your [SUN_NAME] Sun + [RISING_NAME] Rising style: direct, but thoughtful. It also helps that [PROFILE_BASE]. Keep Thursday for decisions that make next week easier."
+  ],
+  "adviceTemplates": [
+    "Friendly advice: choose two measurable goals and close them before Friday.",
+    "Friendly advice: do the uncomfortable task first, then handle admin stuff.",
+    "Friendly advice: protect mornings for deep focus and leave afternoons for people.",
+    "Friendly advice: if tension rises, wait ten minutes before you reply.",
+    "If you want this week to actually move: choose two measurable goals and close them before Friday.",
+    "If you want this week to actually move: do the uncomfortable task first, then handle admin stuff.",
+    "If you want this week to actually move: protect mornings for deep focus and leave afternoons for people.",
+    "If you want this week to actually move: if tension rises, wait ten minutes before you reply.",
+    "Simple rule to protect your energy: choose two measurable goals and close them before Friday.",
+    "Simple rule to protect your energy: do the uncomfortable task first, then handle admin stuff.",
+    "Simple rule to protect your energy: protect mornings for deep focus and leave afternoons for people.",
+    "Simple rule to protect your energy: if tension rises, wait ten minutes before you reply.",
+    "Practical move to ground all this: choose two measurable goals and close them before Friday.",
+    "Practical move to ground all this: do the uncomfortable task first, then handle admin stuff.",
+    "Practical move to ground all this: protect mornings for deep focus and leave afternoons for people.",
+    "Practical move to ground all this: if tension rises, wait ten minutes before you reply.",
+    "To keep your focus from drifting: choose two measurable goals and close them before Friday.",
+    "To keep your focus from drifting: do the uncomfortable task first, then handle admin stuff.",
+    "To keep your focus from drifting: protect mornings for deep focus and leave afternoons for people.",
+    "To keep your focus from drifting: if tension rises, wait ten minutes before you reply.",
+    "Smartest play this week: choose two measurable goals and close them before Friday.",
+    "Smartest play this week: do the uncomfortable task first, then handle admin stuff.",
+    "Smartest play this week: protect mornings for deep focus and leave afternoons for people.",
+    "Smartest play this week: if tension rises, wait ten minutes before you reply."
+  ],
+  "closingTemplates": [
+    "By the weekend, you'll feel lighter and a lot more in control. That puts you in a strong position for what comes next.",
+    "By the weekend, you'll see real progress, not just the feeling of being busy. That puts you in a strong position for what comes next.",
+    "By the weekend, your clarity will feel obvious, inside and out. That puts you in a strong position for what comes next.",
+    "By the weekend, you'll feel proud of how you handled things without losing yourself. That puts you in a strong position for what comes next.",
+    "When Sunday rolls in, you'll feel lighter and a lot more in control. That puts you in a strong position for what comes next.",
+    "When Sunday rolls in, you'll see real progress, not just the feeling of being busy. That puts you in a strong position for what comes next.",
+    "When Sunday rolls in, your clarity will feel obvious, inside and out. That puts you in a strong position for what comes next.",
+    "When Sunday rolls in, you'll feel proud of how you handled things without losing yourself. That puts you in a strong position for what comes next.",
+    "As you close these days, you'll feel lighter and a lot more in control. That puts you in a strong position for what comes next.",
+    "As you close these days, you'll see real progress, not just the feeling of being busy. That puts you in a strong position for what comes next.",
+    "As you close these days, your clarity will feel obvious, inside and out. That puts you in a strong position for what comes next.",
+    "As you close these days, you'll feel proud of how you handled things without losing yourself. That puts you in a strong position for what comes next.",
+    "Toward the end of the week, you'll feel lighter and a lot more in control. That puts you in a strong position for what comes next.",
+    "Toward the end of the week, you'll see real progress, not just the feeling of being busy. That puts you in a strong position for what comes next.",
+    "Toward the end of the week, your clarity will feel obvious, inside and out. That puts you in a strong position for what comes next.",
+    "Toward the end of the week, you'll feel proud of how you handled things without losing yourself. That puts you in a strong position for what comes next.",
+    "By Friday evening, you'll feel lighter and a lot more in control. That puts you in a strong position for what comes next.",
+    "By Friday evening, you'll see real progress, not just the feeling of being busy. That puts you in a strong position for what comes next.",
+    "By Friday evening, your clarity will feel obvious, inside and out. That puts you in a strong position for what comes next.",
+    "By Friday evening, you'll feel proud of how you handled things without losing yourself. That puts you in a strong position for what comes next.",
+    "At the end of this week, you'll feel lighter and a lot more in control. That puts you in a strong position for what comes next.",
+    "At the end of this week, you'll see real progress, not just the feeling of being busy. That puts you in a strong position for what comes next.",
+    "At the end of this week, your clarity will feel obvious, inside and out. That puts you in a strong position for what comes next.",
+    "At the end of this week, you'll feel proud of how you handled things without losing yourself. That puts you in a strong position for what comes next."
+  ],
+  "profileBaseTemplates": [
+    "you naturally combine [SUN_CORE] with a [RISING_STYLE] way of moving",
+    "when you trust yourself, [SUN_CORE] comes through with a [RISING_STYLE] style",
+    "your edge appears when [SUN_CORE] is expressed in a [RISING_STYLE] presence",
+    "there is something very you about blending [SUN_CORE] with a [RISING_STYLE] tone",
+    "you work best when [SUN_CORE] is grounded in [RISING_STYLE] energy",
+    "what powers you most right now is [SUN_CORE] expressed in a [RISING_STYLE] way",
+    "your strongest version shows up when [SUN_CORE] meets a [RISING_STYLE] rhythm",
+    "this week favors showing [SUN_CORE] through a [RISING_STYLE] voice",
+    "your balance appears when [SUN_CORE] is supported by a [RISING_STYLE] mode",
+    "you feel most solid when [SUN_CORE] comes out in a [RISING_STYLE] expression",
+    "for you, [SUN_CORE] fits especially well with a [RISING_STYLE] presence",
+    "your momentum grows when [SUN_CORE] moves with [RISING_STYLE] energy"
+  ]
 }

@@ -25,6 +25,17 @@ struct WeeklyView: View {
         )
     }
 
+    private var weeklyFooterText: String {
+        let week = Calendar.current.component(.weekOfYear, from: Date())
+        let footerIndex = (max(week, 1) - 1) % 15 + 1
+        let key = "weekly.footer.\(footerIndex)"
+        let resolved = Bundle.main.localizedString(forKey: key, value: key, table: nil)
+        if resolved == key {
+            return String(localized: "weekly.footer")
+        }
+        return resolved
+    }
+
     var body: some View {
         ZStack {
             CosmicBackgroundView()
@@ -137,7 +148,7 @@ struct WeeklyView: View {
                             .fixedSize(horizontal: false, vertical: true)
                     }
 
-                    Text(String(localized: "weekly.footer"))
+                    Text(weeklyFooterText)
                         .font(AppTheme.Typography.footnote)
                         .foregroundStyle(.secondary)
                         .padding(.top, 4)

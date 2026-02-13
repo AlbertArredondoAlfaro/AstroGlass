@@ -9,11 +9,18 @@ struct HoroscopeService {
         let theme = content.themes[safe: themeIndex] ?? ""
         let sunName = localized(sunSign.nameKey)
         let risingName = localized(risingSign.nameKey)
-        let sunCore = content.sunCore[sunSign.rawValue] ?? ""
-        let risingStyle = content.risingStyle[risingSign.rawValue] ?? ""
+        let seed = deterministicSeed(
+            weekOfYear: weekOfYear,
+            sunSign: sunSign,
+            risingSign: risingSign,
+            languageCode: languageCode
+        )
+        let sunCore = pickVariant(content.sunCore[sunSign.rawValue] ?? [], seed: seed, salt: 101)
+        let risingStyle = pickVariant(content.risingStyle[risingSign.rawValue] ?? [], seed: seed, salt: 131)
+        let profileBaseTemplate = pickVariant(content.profileBaseTemplates, seed: seed, salt: 151)
 
         let profileBase = interpolate(
-            content.profileBaseTemplate,
+            profileBaseTemplate,
             [
                 "SUN_CORE": sunCore,
                 "RISING_STYLE": risingStyle
@@ -27,10 +34,10 @@ struct HoroscopeService {
             "PROFILE_BASE": profileBase
         ]
 
-        let opening = interpolate(content.openingTemplate, context)
-        let manifestation = interpolate(content.manifestationTemplate, context)
-        let advice = interpolate(content.adviceTemplate, context)
-        let closing = interpolate(content.closingTemplate, context)
+        let opening = interpolate(pickTemplate(content.openingTemplates, seed: seed, salt: 11), context)
+        let manifestation = interpolate(pickTemplate(content.manifestationTemplates, seed: seed, salt: 29), context)
+        let advice = interpolate(pickTemplate(content.adviceTemplates, seed: seed, salt: 47), context)
+        let closing = interpolate(pickTemplate(content.closingTemplates, seed: seed, salt: 83), context)
 
         return Horoscope(sign: sunSign, weekOfYear: weekOfYear, paragraphs: [opening, manifestation, advice, closing])
     }
@@ -66,6 +73,37 @@ struct HoroscopeService {
         }
     }
 
+    private func pickTemplate(_ templates: [String], seed: Int, salt: Int) -> String {
+        guard !templates.isEmpty else { return "" }
+        let index = abs(seed &+ salt) % templates.count
+        return templates[index]
+    }
+
+    private func pickVariant(_ variants: [String], seed: Int, salt: Int) -> String {
+        guard !variants.isEmpty else { return "" }
+        let index = abs(seed &+ salt) % variants.count
+        return variants[index]
+    }
+
+    private func deterministicSeed(
+        weekOfYear: Int,
+        sunSign: ZodiacSign,
+        risingSign: ZodiacSign,
+        languageCode: String
+    ) -> Int {
+        let sunIndex = ZodiacSign.allCases.firstIndex(of: sunSign) ?? 0
+        let risingIndex = ZodiacSign.allCases.firstIndex(of: risingSign) ?? 0
+
+        var seed = 17
+        seed = seed &* 31 &+ weekOfYear
+        seed = seed &* 31 &+ sunIndex
+        seed = seed &* 31 &+ risingIndex
+        for scalar in languageCode.unicodeScalars {
+            seed = seed &* 31 &+ Int(scalar.value)
+        }
+        return seed
+    }
+
     private func localized(_ key: String) -> String {
         Bundle.main.localizedString(forKey: key, value: key, table: nil)
     }
@@ -78,23 +116,23 @@ struct HoroscopeService {
 private final class BundleToken {}
 
 private struct HoroscopeEngineContent: Codable {
-    let openingTemplate: String
-    let manifestationTemplate: String
-    let adviceTemplate: String
-    let closingTemplate: String
-    let profileBaseTemplate: String
+    let openingTemplates: [String]
+    let manifestationTemplates: [String]
+    let adviceTemplates: [String]
+    let closingTemplates: [String]
+    let profileBaseTemplates: [String]
     let themes: [String]
-    let sunCore: [String: String]
-    let risingStyle: [String: String]
+    let sunCore: [String: [String]]
+    let risingStyle: [String: [String]]
 }
 
 private extension HoroscopeEngineContent {
     static let empty = HoroscopeEngineContent(
-        openingTemplate: "",
-        manifestationTemplate: "",
-        adviceTemplate: "",
-        closingTemplate: "",
-        profileBaseTemplate: "",
+        openingTemplates: [],
+        manifestationTemplates: [],
+        adviceTemplates: [],
+        closingTemplates: [],
+        profileBaseTemplates: [],
         themes: [],
         sunCore: [:],
         risingStyle: [:]
