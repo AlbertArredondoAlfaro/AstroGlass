@@ -5,7 +5,6 @@
 "weekly.title" = "Esta semana";
 "weekly.rising" = "Rising Sign";
 "weekly.rising.approx" = "Rising sign is approximate.";
-"weekly.footer" = "Let the cosmos open new paths while you move with intention.";
 
 "action.next" = "Siguiente";
 "action.back" = "Atrás";
@@ -49,8 +48,6 @@
 
 "notification.weekly.title" = "Tu horóscopo semanal ya está listo ✨";
 "notification.weekly.body" = "Abre AstroGlass y lee tu guía cósmica.";
-
-
 
 "element.fire" = "Fire";
 "element.earth" = "Earth";
@@ -221,8 +218,6 @@
 "weekly.rising.approx" = "El ascendente es aproximado.";
 "weekly.footer" = "Deja que el cosmos abra nuevos caminos mientras avanzas con intención.";
 
-
-
 "element.fire" = "Fuego";
 "element.earth" = "Tierra";
 "element.air" = "Aire";
@@ -298,3 +293,18 @@
 "sign.pisces.gift" = "compasión mística";
 "sign.pisces.shadow" = "evasión";
 "sign.pisces.mantra" = "Fluyo con gracia";
+"weekly.footer.1" = "Los pasos pequeños de esta semana pueden abrir puertas grandes.";
+"weekly.footer.2" = "Cuida tu paz y tu timing; ahí también está tu poder.";
+"weekly.footer.3" = "Lo que eliges no cargar importa tanto como lo que persigues.";
+"weekly.footer.4" = "Mantén el foco cerca: ahora mismo tu ventaja es la claridad.";
+"weekly.footer.5" = "Esta semana te irá mejor el buen ritmo que la prisa.";
+"weekly.footer.6" = "Confía en el avance silencioso; es más sólido de lo que parece.";
+"weekly.footer.7" = "Tu constancia está creando impulso, aunque aún sea sutil.";
+"weekly.footer.8" = "Di sí a lo que te expande y no a lo que te drena.";
+"weekly.footer.9" = "Buena semana para simplificar y recuperar energía.";
+"weekly.footer.10" = "Una conversación honesta puede mover más que diez planes perfectos.";
+"weekly.footer.11" = "No hace falta forzar resultados; basta con sostener el siguiente paso.";
+"weekly.footer.12" = "Las decisiones serenas de hoy te ahorran ruido mañana.";
+"weekly.footer.13" = "Tu intuición está fina; combínala con acción concreta.";
+"weekly.footer.14" = "Que tus prioridades se noten en tu agenda, no solo en tu cabeza.";
+"weekly.footer.15" = "Estás más cerca de lo que crees; mantén el ritmo.";

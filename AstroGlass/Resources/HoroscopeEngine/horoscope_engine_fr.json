@@ -1,9 +1,4 @@
 {
-  "openingTemplate": "Dès lundi, tu vas le sentir: le thème de la semaine —[THEME]— t'aide à y voir plus clair et à décider sans te disperser.",
-  "manifestationTemplate": "Avec [SUN_NAME] en solaire et [RISING_NAME] en ascendant, cette énergie te correspond bien: tu sais où aller et comment faire avancer les choses sans te perdre dans le bruit. [PROFILE_BASE] La meilleure fenêtre se situe entre mardi après-midi et jeudi matin, surtout pour remettre de l'ordre dans tes priorités et débloquer une discussion importante.",
-  "adviceTemplate": "Conseil d'ami: fixe deux objectifs mesurables et boucle-les avant vendredi. Si la pression monte, ne réponds pas à chaud; prends une pause courte, puis reviens avec une réponse plus posée et plus juste.",
-  "closingTemplate": "Tu finis la semaine plus léger, plus lucide, et franchement fier de la façon dont tu as géré tout ça.",
-  "profileBaseTemplate": "Au fond, cette combinaison repose sur [SUN_CORE], avec une manière de te montrer [RISING_STYLE].",
   "themes": [
     "alignement serein",
     "élan créatif",
@@ -15,31 +10,245 @@
     "clarté intérieure"
   ],
   "sunCore": {
-    "aries": "élan courageux et direct",
-    "taurus": "constance, calme et force pratique",
-    "gemini": "esprit rapide et adaptable",
-    "cancer": "intuition émotionnelle et protection des siens",
-    "leo": "leadership chaleureux et créatif",
-    "virgo": "précision, ordre et amélioration continue",
-    "libra": "vision équilibrée et diplomatie",
-    "scorpio": "intensité stratégique et profondeur",
-    "sagittarius": "expansion, franchise et recherche de sens",
-    "capricorn": "discipline, ambition et focus résultats",
-    "aquarius": "indépendance mentale et vision innovante",
-    "pisces": "sensibilité, empathie et créativité"
+    "aries": [
+      "initiative audacieuse pour ouvrir des voies",
+      "leadership naturel quand tout commence",
+      "décision rapide dans les moments clés"
+    ],
+    "taurus": [
+      "constance patiente pour construire dans la durée",
+      "sens pratique pour protéger les ressources",
+      "calme solide quand les autres accélèrent"
+    ],
+    "gemini": [
+      "agilité mentale pour relier les idées",
+      "talent relationnel qui connecte les personnes",
+      "curiosité active qui repère les opportunités"
+    ],
+    "cancer": [
+      "intuition émotionnelle très fine",
+      "soin loyal des liens proches",
+      "lecture sensible de ce qui n’est pas dit"
+    ],
+    "leo": [
+      "présence créative qui inspire",
+      "courage de se montrer sans masque",
+      "générosité quand il prend le lead"
+    ],
+    "virgo": [
+      "œil précis pour améliorer les systèmes",
+      "ordre fonctionnel qui apaise",
+      "discipline utile qui transforme le chaos en clarté"
+    ],
+    "libra": [
+      "diplomatie élégante dans les situations complexes",
+      "vrai sens d’un équilibre juste",
+      "talent de médiation sans perdre la vérité"
+    ],
+    "scorpio": [
+      "intensité stratégique très concentrée",
+      "grande capacité de transformation",
+      "lecture fine des motivations cachées"
+    ],
+    "sagittarius": [
+      "vision expansive qui ouvre des horizons",
+      "franchise qui déclenche les décisions",
+      "instinct pour chercher du sens"
+    ],
+    "capricorn": [
+      "discipline constante orientée résultats",
+      "ambition mature avec sens de la structure",
+      "forte responsabilité sur les objectifs importants"
+    ],
+    "aquarius": [
+      "indépendance mentale pour penser autrement",
+      "vision innovante tournée vers l’avenir",
+      "capacité à casser les schémas dépassés"
+    ],
+    "pisces": [
+      "empathie subtile et profonde sensibilité",
+      "imagination créative pour des solutions nouvelles",
+      "connexion spirituelle qui apaise et guide"
+    ]
   },
   "risingStyle": {
-    "aries": "décisif et rapide",
-    "taurus": "stable et ancré",
-    "gemini": "curieux et communicatif",
-    "cancer": "protecteur et sensible émotionnellement",
-    "leo": "visible, chaleureux et confiant",
-    "virgo": "méthodique et orienté détail",
-    "libra": "harmonisant et soigné",
-    "scorpio": "intense et discret",
-    "sagittarius": "ouvert et explorateur",
-    "capricorn": "sérieux et orienté objectifs",
-    "aquarius": "indépendant et original",
-    "pisces": "empathique et fluide"
-  }
+    "aries": [
+      "impact initial direct sans détour",
+      "réaction impulsive sous pression sociale",
+      "audace pour prendre l’initiative en groupe"
+    ],
+    "taurus": [
+      "présence stable qui rassure",
+      "résistance rigide face à l’inconfort",
+      "constance calme dans le suivi"
+    ],
+    "gemini": [
+      "entrée sociale légère et parlante",
+      "agitation verbale sous tension",
+      "souplesse intelligente pour s’adapter vite"
+    ],
+    "cancer": [
+      "première impression chaleureuse et protectrice",
+      "repli émotionnel en climat hostile",
+      "capacité à prendre soin sans envahir"
+    ],
+    "leo": [
+      "charisme visible dès la première minute",
+      "orgueil défensif quand il se sent remis en cause",
+      "confiance rayonnante qui tire le groupe vers le haut"
+    ],
+    "virgo": [
+      "style externe ordonné et observateur",
+      "sur-contrôle dans les zones d’incertitude",
+      "précision calme sur les détails utiles"
+    ],
+    "libra": [
+      "approche agréable et conciliatrice",
+      "hésitation excessive en conflit ouvert",
+      "talent naturel pour harmoniser les opposés"
+    ],
+    "scorpio": [
+      "présence intense et réservée",
+      "défense tranchante quand il sent une menace",
+      "profondeur stratégique dans la lecture du contexte"
+    ],
+    "sagittarius": [
+      "énergie sociale ouverte et aventureuse",
+      "franchise brutale sous stress",
+      "enthousiasme qui met les autres en mouvement"
+    ],
+    "capricorn": [
+      "sérieux fiable au premier contact",
+      "auto-exigence dure sous pression",
+      "maturité solide dans les engagements"
+    ],
+    "aquarius": [
+      "style original et légèrement distant",
+      "déconnexion émotionnelle en surcharge",
+      "regard objectif qui clarifie"
+    ],
+    "pisces": [
+      "aura empathique et réceptive",
+      "évitement quand l’ambiance devient lourde",
+      "sensibilité inspirante dans le lien humain"
+    ]
+  },
+  "openingTemplates": [
+    "Lundi t'envoie un message assez clair: [THEME] va rythmer ta semaine alors fais confiance à cette première décision qui t'apaise.",
+    "Lundi t'envoie un message assez clair: [THEME] va rythmer ta semaine et ton focus devient beaucoup plus net.",
+    "Lundi t'envoie un message assez clair: [THEME] va rythmer ta semaine sans rien forcer.",
+    "Lundi t'envoie un message assez clair: [THEME] va rythmer ta semaine surtout sur ce qui change vraiment ton quotidien.",
+    "Dès lundi, [THEME] remet de l'ordre dans ta tête alors fais confiance à cette première décision qui t'apaise.",
+    "Dès lundi, [THEME] remet de l'ordre dans ta tête et ton focus devient beaucoup plus net.",
+    "Dès lundi, [THEME] remet de l'ordre dans ta tête sans rien forcer.",
+    "Dès lundi, [THEME] remet de l'ordre dans ta tête surtout sur ce qui change vraiment ton quotidien.",
+    "La semaine s'ouvre avec [THEME], et ça tombe franchement bien alors fais confiance à cette première décision qui t'apaise.",
+    "La semaine s'ouvre avec [THEME], et ça tombe franchement bien et ton focus devient beaucoup plus net.",
+    "La semaine s'ouvre avec [THEME], et ça tombe franchement bien sans rien forcer.",
+    "La semaine s'ouvre avec [THEME], et ça tombe franchement bien surtout sur ce qui change vraiment ton quotidien.",
+    "En début de semaine, [THEME] t'aide à distinguer l'essentiel du bruit alors fais confiance à cette première décision qui t'apaise.",
+    "En début de semaine, [THEME] t'aide à distinguer l'essentiel du bruit et ton focus devient beaucoup plus net.",
+    "En début de semaine, [THEME] t'aide à distinguer l'essentiel du bruit sans rien forcer.",
+    "En début de semaine, [THEME] t'aide à distinguer l'essentiel du bruit surtout sur ce qui change vraiment ton quotidien.",
+    "Dès le premier jour, [THEME] te pousse à avancer avec plus d'intention alors fais confiance à cette première décision qui t'apaise.",
+    "Dès le premier jour, [THEME] te pousse à avancer avec plus d'intention et ton focus devient beaucoup plus net.",
+    "Dès le premier jour, [THEME] te pousse à avancer avec plus d'intention sans rien forcer.",
+    "Dès le premier jour, [THEME] te pousse à avancer avec plus d'intention surtout sur ce qui change vraiment ton quotidien.",
+    "Cette semaine commence avec [THEME], et ça te correspond vraiment alors fais confiance à cette première décision qui t'apaise.",
+    "Cette semaine commence avec [THEME], et ça te correspond vraiment et ton focus devient beaucoup plus net.",
+    "Cette semaine commence avec [THEME], et ça te correspond vraiment sans rien forcer.",
+    "Cette semaine commence avec [THEME], et ça te correspond vraiment surtout sur ce qui change vraiment ton quotidien."
+  ],
+  "manifestationTemplates": [
+    "Avec [SUN_NAME] en solaire et [RISING_NAME] en ascendant, tu as un mix puissant d'instinct et de direction, et c’est là qu’on voit que [PROFILE_BASE]. Entre mardi après-midi et jeudi matin, tu as une vraie fenêtre pour une conversation importante.",
+    "Avec [SUN_NAME] en solaire et [RISING_NAME] en ascendant, tu as un mix puissant d'instinct et de direction, et dans ton cas ça marche parce que [PROFILE_BASE]. Le milieu de semaine est parfait pour remettre tes priorités dans l'ordre.",
+    "Avec [SUN_NAME] en solaire et [RISING_NAME] en ascendant, tu as un mix puissant d'instinct et de direction. En plus, [PROFILE_BASE]. Le mercredi est idéal pour débloquer ce qui traînait.",
+    "Avec [SUN_NAME] en solaire et [RISING_NAME] en ascendant, tu as un mix puissant d'instinct et de direction. Ce qui est intéressant, c’est que [PROFILE_BASE]. Garde le jeudi pour les décisions qui te simplifient la semaine suivante.",
+    "Ta base [SUN_NAME] avec ascendant [RISING_NAME] t'apporte de la clarté pour décider et de l'élan pour agir, et c’est précisément pour ça que [PROFILE_BASE]. Entre mardi après-midi et jeudi matin, tu as une vraie fenêtre pour une conversation importante.",
+    "Ta base [SUN_NAME] avec ascendant [RISING_NAME] t'apporte de la clarté pour décider et de l'élan pour agir. Ça aide aussi que [PROFILE_BASE]. Le milieu de semaine est parfait pour remettre tes priorités dans l'ordre.",
+    "Ta base [SUN_NAME] avec ascendant [RISING_NAME] t'apporte de la clarté pour décider et de l'élan pour agir, et c’est là qu’on voit que [PROFILE_BASE]. Le mercredi est idéal pour débloquer ce qui traînait.",
+    "Ta base [SUN_NAME] avec ascendant [RISING_NAME] t'apporte de la clarté pour décider et de l'élan pour agir, et dans ton cas ça marche parce que [PROFILE_BASE]. Garde le jeudi pour les décisions qui te simplifient la semaine suivante.",
+    "Le duo [SUN_NAME] + [RISING_NAME] t'aide à lire l'ambiance sans perdre ton centre. En plus, [PROFILE_BASE]. Entre mardi après-midi et jeudi matin, tu as une vraie fenêtre pour une conversation importante.",
+    "Le duo [SUN_NAME] + [RISING_NAME] t'aide à lire l'ambiance sans perdre ton centre. Ce qui est intéressant, c’est que [PROFILE_BASE]. Le milieu de semaine est parfait pour remettre tes priorités dans l'ordre.",
+    "Le duo [SUN_NAME] + [RISING_NAME] t'aide à lire l'ambiance sans perdre ton centre, et c’est précisément pour ça que [PROFILE_BASE]. Le mercredi est idéal pour débloquer ce qui traînait.",
+    "Le duo [SUN_NAME] + [RISING_NAME] t'aide à lire l'ambiance sans perdre ton centre. Ça aide aussi que [PROFILE_BASE]. Garde le jeudi pour les décisions qui te simplifient la semaine suivante.",
+    "Avec [SUN_NAME] solaire et [RISING_NAME] ascendant, cette semaine est plus gérable que d'habitude, et c’est là qu’on voit que [PROFILE_BASE]. Entre mardi après-midi et jeudi matin, tu as une vraie fenêtre pour une conversation importante.",
+    "Avec [SUN_NAME] solaire et [RISING_NAME] ascendant, cette semaine est plus gérable que d'habitude, et dans ton cas ça marche parce que [PROFILE_BASE]. Le milieu de semaine est parfait pour remettre tes priorités dans l'ordre.",
+    "Avec [SUN_NAME] solaire et [RISING_NAME] ascendant, cette semaine est plus gérable que d'habitude. En plus, [PROFILE_BASE]. Le mercredi est idéal pour débloquer ce qui traînait.",
+    "Avec [SUN_NAME] solaire et [RISING_NAME] ascendant, cette semaine est plus gérable que d'habitude. Ce qui est intéressant, c’est que [PROFILE_BASE]. Garde le jeudi pour les décisions qui te simplifient la semaine suivante.",
+    "Ta combinaison [SUN_NAME]/[RISING_NAME] transforme l'intention en mouvement avec moins de friction, et c’est précisément pour ça que [PROFILE_BASE]. Entre mardi après-midi et jeudi matin, tu as une vraie fenêtre pour une conversation importante.",
+    "Ta combinaison [SUN_NAME]/[RISING_NAME] transforme l'intention en mouvement avec moins de friction. Ça aide aussi que [PROFILE_BASE]. Le milieu de semaine est parfait pour remettre tes priorités dans l'ordre.",
+    "Ta combinaison [SUN_NAME]/[RISING_NAME] transforme l'intention en mouvement avec moins de friction, et c’est là qu’on voit que [PROFILE_BASE]. Le mercredi est idéal pour débloquer ce qui traînait.",
+    "Ta combinaison [SUN_NAME]/[RISING_NAME] transforme l'intention en mouvement avec moins de friction, et dans ton cas ça marche parce que [PROFILE_BASE]. Garde le jeudi pour les décisions qui te simplifient la semaine suivante.",
+    "Cette semaine récompense ton style [SUN_NAME] solaire + [RISING_NAME] ascendant: direct, mais posé. En plus, [PROFILE_BASE]. Entre mardi après-midi et jeudi matin, tu as une vraie fenêtre pour une conversation importante.",
+    "Cette semaine récompense ton style [SUN_NAME] solaire + [RISING_NAME] ascendant: direct, mais posé. Ce qui est intéressant, c’est que [PROFILE_BASE]. Le milieu de semaine est parfait pour remettre tes priorités dans l'ordre.",
+    "Cette semaine récompense ton style [SUN_NAME] solaire + [RISING_NAME] ascendant: direct, mais posé, et c’est précisément pour ça que [PROFILE_BASE]. Le mercredi est idéal pour débloquer ce qui traînait.",
+    "Cette semaine récompense ton style [SUN_NAME] solaire + [RISING_NAME] ascendant: direct, mais posé. Ça aide aussi que [PROFILE_BASE]. Garde le jeudi pour les décisions qui te simplifient la semaine suivante."
+  ],
+  "adviceTemplates": [
+    "Conseil d'ami: choisis deux objectifs mesurables et boucle-les avant vendredi.",
+    "Conseil d'ami: commence par la tâche inconfortable, puis fais l'administratif.",
+    "Conseil d'ami: protège tes matinées pour le focus et garde l'après-midi pour les échanges.",
+    "Conseil d'ami: si la tension monte, attends dix minutes avant de répondre.",
+    "Si tu veux que ta semaine avance pour de vrai: choisis deux objectifs mesurables et boucle-les avant vendredi.",
+    "Si tu veux que ta semaine avance pour de vrai: commence par la tâche inconfortable, puis fais l'administratif.",
+    "Si tu veux que ta semaine avance pour de vrai: protège tes matinées pour le focus et garde l'après-midi pour les échanges.",
+    "Si tu veux que ta semaine avance pour de vrai: si la tension monte, attends dix minutes avant de répondre.",
+    "Règle simple pour protéger ton énergie: choisis deux objectifs mesurables et boucle-les avant vendredi.",
+    "Règle simple pour protéger ton énergie: commence par la tâche inconfortable, puis fais l'administratif.",
+    "Règle simple pour protéger ton énergie: protège tes matinées pour le focus et garde l'après-midi pour les échanges.",
+    "Règle simple pour protéger ton énergie: si la tension monte, attends dix minutes avant de répondre.",
+    "Mouvement concret pour ancrer tout ça: choisis deux objectifs mesurables et boucle-les avant vendredi.",
+    "Mouvement concret pour ancrer tout ça: commence par la tâche inconfortable, puis fais l'administratif.",
+    "Mouvement concret pour ancrer tout ça: protège tes matinées pour le focus et garde l'après-midi pour les échanges.",
+    "Mouvement concret pour ancrer tout ça: si la tension monte, attends dix minutes avant de répondre.",
+    "Pour éviter de perdre ton focus: choisis deux objectifs mesurables et boucle-les avant vendredi.",
+    "Pour éviter de perdre ton focus: commence par la tâche inconfortable, puis fais l'administratif.",
+    "Pour éviter de perdre ton focus: protège tes matinées pour le focus et garde l'après-midi pour les échanges.",
+    "Pour éviter de perdre ton focus: si la tension monte, attends dix minutes avant de répondre.",
+    "Le choix le plus intelligent cette semaine: choisis deux objectifs mesurables et boucle-les avant vendredi.",
+    "Le choix le plus intelligent cette semaine: commence par la tâche inconfortable, puis fais l'administratif.",
+    "Le choix le plus intelligent cette semaine: protège tes matinées pour le focus et garde l'après-midi pour les échanges.",
+    "Le choix le plus intelligent cette semaine: si la tension monte, attends dix minutes avant de répondre."
+  ],
+  "closingTemplates": [
+    "D'ici le week-end, tu te sentiras plus léger et nettement plus en contrôle. Et ça te met dans une très bonne position pour la suite.",
+    "D'ici le week-end, tu verras un vrai progrès, pas juste l'impression de courir partout. Et ça te met dans une très bonne position pour la suite.",
+    "D'ici le week-end, ta clarté sera visible, pour toi comme pour les autres. Et ça te met dans une très bonne position pour la suite.",
+    "D'ici le week-end, tu seras fier de ta manière de gérer sans te trahir. Et ça te met dans une très bonne position pour la suite.",
+    "Quand dimanche arrive, tu te sentiras plus léger et nettement plus en contrôle. Et ça te met dans une très bonne position pour la suite.",
+    "Quand dimanche arrive, tu verras un vrai progrès, pas juste l'impression de courir partout. Et ça te met dans une très bonne position pour la suite.",
+    "Quand dimanche arrive, ta clarté sera visible, pour toi comme pour les autres. Et ça te met dans une très bonne position pour la suite.",
+    "Quand dimanche arrive, tu seras fier de ta manière de gérer sans te trahir. Et ça te met dans une très bonne position pour la suite.",
+    "En refermant ces jours, tu te sentiras plus léger et nettement plus en contrôle. Et ça te met dans une très bonne position pour la suite.",
+    "En refermant ces jours, tu verras un vrai progrès, pas juste l'impression de courir partout. Et ça te met dans une très bonne position pour la suite.",
+    "En refermant ces jours, ta clarté sera visible, pour toi comme pour les autres. Et ça te met dans une très bonne position pour la suite.",
+    "En refermant ces jours, tu seras fier de ta manière de gérer sans te trahir. Et ça te met dans une très bonne position pour la suite.",
+    "Vers la fin de semaine, tu te sentiras plus léger et nettement plus en contrôle. Et ça te met dans une très bonne position pour la suite.",
+    "Vers la fin de semaine, tu verras un vrai progrès, pas juste l'impression de courir partout. Et ça te met dans une très bonne position pour la suite.",
+    "Vers la fin de semaine, ta clarté sera visible, pour toi comme pour les autres. Et ça te met dans une très bonne position pour la suite.",
+    "Vers la fin de semaine, tu seras fier de ta manière de gérer sans te trahir. Et ça te met dans une très bonne position pour la suite.",
+    "Quand tu arrives à vendredi, tu te sentiras plus léger et nettement plus en contrôle. Et ça te met dans une très bonne position pour la suite.",
+    "Quand tu arrives à vendredi, tu verras un vrai progrès, pas juste l'impression de courir partout. Et ça te met dans une très bonne position pour la suite.",
+    "Quand tu arrives à vendredi, ta clarté sera visible, pour toi comme pour les autres. Et ça te met dans une très bonne position pour la suite.",
+    "Quand tu arrives à vendredi, tu seras fier de ta manière de gérer sans te trahir. Et ça te met dans une très bonne position pour la suite.",
+    "En fin de semaine, tu te sentiras plus léger et nettement plus en contrôle. Et ça te met dans une très bonne position pour la suite.",
+    "En fin de semaine, tu verras un vrai progrès, pas juste l'impression de courir partout. Et ça te met dans une très bonne position pour la suite.",
+    "En fin de semaine, ta clarté sera visible, pour toi comme pour les autres. Et ça te met dans une très bonne position pour la suite.",
+    "En fin de semaine, tu seras fier de ta manière de gérer sans te trahir. Et ça te met dans une très bonne position pour la suite."
+  ],
+  "profileBaseTemplates": [
+    "tu combines naturellement [SUN_CORE] avec une manière [RISING_STYLE] d’avancer",
+    "quand tu te fais confiance, [SUN_CORE] sort avec un style [RISING_STYLE]",
+    "ton vrai point fort apparaît quand [SUN_CORE] passe par une présence [RISING_STYLE]",
+    "il y a quelque chose de très toi dans le mélange [SUN_CORE] et ton [RISING_STYLE]",
+    "tu fonctionnes mieux quand [SUN_CORE] est porté par une énergie [RISING_STYLE]",
+    "ce qui te booste le plus en ce moment, c’est [SUN_CORE] en version [RISING_STYLE]",
+    "ta meilleure version sort quand [SUN_CORE] rencontre un rythme [RISING_STYLE]",
+    "cette semaine t’aide à exprimer [SUN_CORE] avec une voix [RISING_STYLE]",
+    "ton équilibre arrive quand [SUN_CORE] s’appuie sur un mode [RISING_STYLE]",
+    "tu es plus solide quand [SUN_CORE] se montre de façon [RISING_STYLE]",
+    "chez toi, [SUN_CORE] colle très bien avec une présence [RISING_STYLE]",
+    "ton élan monte quand [SUN_CORE] avance avec une énergie [RISING_STYLE]"
+  ]
 }
