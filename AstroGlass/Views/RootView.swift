@@ -14,6 +14,34 @@ struct RootView: View {
                 OnboardingView()
                     .transition(.opacity)
             }
+
+            if model.isLoadingAIModel {
+                ZStack {
+                    Color.black.opacity(0.26)
+                        .ignoresSafeArea()
+
+                    VStack(spacing: 14) {
+                        ProgressView()
+                            .controlSize(.large)
+                            .tint(.white)
+
+                        Text(String(localized: "ai.model.loading"))
+                            .font(AppTheme.Typography.headline)
+                            .foregroundStyle(.white)
+                    }
+                    .padding(.horizontal, 24)
+                    .padding(.vertical, 20)
+                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 24, style: .continuous)
+                            .stroke(.white.opacity(0.2), lineWidth: 1)
+                    )
+                    .shadow(color: .black.opacity(0.4), radius: 24, x: 0, y: 10)
+                    .padding(.horizontal, 28)
+                }
+                .transition(.opacity)
+                .zIndex(10)
+            }
         }
         .task {
             await model.bootstrap()
@@ -23,6 +51,9 @@ struct RootView: View {
         }
         .onChange(of: model.notificationsEnabled) { _, _ in
             Task { await model.toggleNotifications() }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: NSLocale.currentLocaleDidChangeNotification)) { _ in
+            model.refreshHoroscopeIfLanguageChanged()
         }
     }
 }

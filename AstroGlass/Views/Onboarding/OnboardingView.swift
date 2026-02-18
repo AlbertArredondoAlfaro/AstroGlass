@@ -68,9 +68,6 @@ struct OnboardingView: View {
                     .frame(maxWidth: cardMaxWidth, alignment: .center)
                     .padding(.horizontal, sidePadding)
 
-                GlowSymbolView(symbol: "✦", size: 62)
-                    .frame(maxWidth: .infinity, alignment: .center)
-
                 VStack(alignment: .leading, spacing: 18) {
                     Text(String(localized: String.LocalizationValue(subtitleKey)))
                         .font(AppTheme.Typography.headline)

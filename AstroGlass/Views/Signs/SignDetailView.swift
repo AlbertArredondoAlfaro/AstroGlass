@@ -9,7 +9,7 @@ struct SignDetailView: View {
             VStack(spacing: 14) {
                 GlassCard(style: .detail) {
                     VStack(spacing: 8) {
-                        GlowSymbolView(symbol: sign.symbol, size: 88)
+                        GlowSymbolView(imageName: sign.assetName, size: 88)
                             .matchedGeometryEffect(id: sign.rawValue, in: namespace)
                         Text(String(localized: String.LocalizationValue(sign.nameKey)))
                             .font(AppTheme.Typography.title)

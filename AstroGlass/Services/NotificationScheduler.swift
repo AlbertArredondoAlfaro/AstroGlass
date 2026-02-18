@@ -6,18 +6,25 @@ final class NotificationScheduler {
     private let center = UNUserNotificationCenter.current()
     private let weeklyIdentifier = "weeklyHoroscopeNotification"
 
-    func scheduleWeekly() async {
+    func authorizationStatus() async -> UNAuthorizationStatus {
         let settings = await center.notificationSettings()
-        let granted: Bool
+        return settings.authorizationStatus
+    }
 
-        switch settings.authorizationStatus {
+    func requestAuthorizationIfNeeded() async -> Bool {
+        let status = await authorizationStatus()
+        switch status {
         case .authorized, .provisional:
-            granted = true
+            return true
         case .notDetermined:
-            granted = (try? await center.requestAuthorization(options: [.alert, .sound, .badge])) ?? false
+            return (try? await center.requestAuthorization(options: [.alert, .sound, .badge])) ?? false
         default:
-            granted = false
+            return false
         }
+    }
+
+    func scheduleWeekly() async {
+        let granted = await requestAuthorizationIfNeeded()
 
         guard granted else { return }
 

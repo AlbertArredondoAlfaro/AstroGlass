@@ -8,6 +8,7 @@ import UIKit
 @Observable
 final class AdService: NSObject {
     private let defaults = UserDefaults.standard
+    private let isAdMobEnabled = false
 
     // Test IDs. Replace with production IDs before release.
     let bannerAdUnitId = "ca-app-pub-3940256099942544/2435281174"
@@ -16,7 +17,7 @@ final class AdService: NSObject {
     var isRemoveAdsPurchased: Bool
     private var interstitial: InterstitialAd?
 
-    var shouldShowBanner: Bool { !isRemoveAdsPurchased }
+    var shouldShowBanner: Bool { isAdMobEnabled && !isRemoveAdsPurchased }
 
     private var lastInterstitialDate: Date? {
         let ts = defaults.double(forKey: DefaultsKeys.lastInterstitialTimestamp)
@@ -36,18 +37,23 @@ final class AdService: NSObject {
     }
 
     func bootstrap() async {
-        guard shouldShowBanner else { return }
+        guard isAdMobEnabled, shouldShowBanner else { return }
         await requestTrackingIfNeeded()
         await MobileAds.shared.start()
         await loadInterstitial()
     }
 
     func requestTrackingIfNeeded() async {
+        guard isAdMobEnabled else { return }
         guard ATTrackingManager.trackingAuthorizationStatus == .notDetermined else { return }
         _ = await ATTrackingManager.requestTrackingAuthorization()
     }
 
     func loadInterstitial() async {
+        guard isAdMobEnabled else {
+            interstitial = nil
+            return
+        }
         do {
             let ad = try await InterstitialAd.load(with: interstitialAdUnitId, request: Request())
             ad.fullScreenContentDelegate = self

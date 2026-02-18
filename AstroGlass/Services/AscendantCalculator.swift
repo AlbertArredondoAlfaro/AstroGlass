@@ -39,7 +39,7 @@ enum AscendantCalculator {
 
         let numerator = -cos(theta)
         let denominator = sin(theta) * cos(epsilon) + tan(phi) * sin(epsilon)
-        var asc = atan2(numerator, denominator)
+        let asc = atan2(numerator, denominator)
         var ascDegrees = rad2deg(asc)
         if ascDegrees < 0 { ascDegrees += 360 }
         // This formula returns the opposite horizon point in our coordinate setup,
