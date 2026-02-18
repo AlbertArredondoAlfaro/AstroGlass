@@ -2,29 +2,20 @@
 "tab.signs" = "All Signs";
 "tab.profile" = "Profile";
 
-"weekly.title" = "This Week";
-"weekly.rising" = "Rising Sign";
 "weekly.rising.approx" = "Rising sign is approximate.";
-"weekly.footer" = "Let the cosmos open new paths while you move with intention.";
-
 "action.next" = "Next";
 "action.back" = "Back";
 "action.finish" = "Finish";
-"action.readfull" = "Read full horoscope";
-"action.collapse" = "Collapse";
 "action.cancel" = "Cancel";
 "action.save" = "Save";
 
-"onboarding.title.name" = "Welcome to AstroGlass";
+"onboarding.title.name" = "Welcome to Astro AI";
 "onboarding.subtitle.name" = "What is your name?";
 "onboarding.placeholder.name" = "Your name";
-"onboarding.title.birthdate" = "Birth date";
-"onboarding.subtitle.birthdate" = "Choose your day of birth";
-"onboarding.title.birthtime" = "Birth time";
-"onboarding.subtitle.birthtime" = "Optional, improves ascendant precision";
+"onboarding.subtitle.birthdate" = "Choose your date of birth";
+"onboarding.subtitle.birthtime" = "Optional, improves rising sign precision";
 "onboarding.toggle.time" = "I know my exact birth time";
-"onboarding.note.approx" = "The ascendant will be approximate.";
-"onboarding.title.city" = "Birth city";
+"onboarding.note.approx" = "The rising sign will be approximate.";
 "onboarding.subtitle.city" = "Choose a city to calculate latitude and longitude";
 "onboarding.placeholder.city" = "Search city";
 
@@ -32,14 +23,14 @@
 "profile.edit" = "Edit profile";
 "profile.notifications" = "Weekly notification";
 "profile.notifications.subtitle" = "Every Monday at 10:00 local time.";
-"profile.removeads.title" = "Remove Ads";
-"profile.removeads.subtitle" = "Unlock a pure ad-free sky.";
-"profile.removeads.active" = "Ads are already removed.";
+"profile.removeads.title" = "Remove ads";
+"profile.removeads.subtitle" = "Unlock an ad-free experience.";
+"profile.removeads.active" = "Ads are already disabled.";
 "profile.removeads.buy" = "Remove ads";
 "profile.removeads.restore" = "Restore purchases";
 "profile.removeads.pricefallback" = "4.99 €";
 
-"signs.title" = "All Signs";
+"signs.title" = "All signs";
 "sign.detail.strengths" = "Strengths";
 "sign.detail.weaknesses" = "Weaknesses";
 "sign.detail.love" = "Love";
@@ -48,15 +39,12 @@
 "sign.detail.stone" = "Stone";
 
 "notification.weekly.title" = "Your weekly horoscope is ready ✨";
-"notification.weekly.body" = "Open AstroGlass and read your cosmic guidance.";
-
-
+"notification.weekly.body" = "Open Astro AI and read your cosmic guidance.";
 
 "element.fire" = "Fire";
 "element.earth" = "Earth";
 "element.air" = "Air";
 "element.water" = "Water";
-
 "ruler.mars" = "Mars";
 "ruler.venus" = "Venus";
 "ruler.mercury" = "Mercury";
@@ -69,165 +57,98 @@
 "ruler.neptune" = "Neptune";
 
 "sign.aries.name" = "Aries";
-"sign.aries.gift" = "bold initiation";
-"sign.aries.shadow" = "impatience";
-"sign.aries.mantra" = "I begin with sacred courage";
 "sign.aries.strengths" = "Courageous, direct, pioneering.";
 "sign.aries.weaknesses" = "Impulsive, impatient, reactive.";
 "sign.aries.love" = "Needs spark, honesty, and movement.";
-"sign.aries.career" = "Thrives in leadership and rapid decisions.";
+"sign.aries.career" = "Strong in leadership and quick decisions.";
 "sign.aries.color" = "Crimson";
 "sign.aries.stone" = "Carnelian";
-
 "sign.taurus.name" = "Taurus";
-"sign.taurus.gift" = "steady devotion";
-"sign.taurus.shadow" = "stubborn holding";
-"sign.taurus.mantra" = "I build beauty that lasts";
 "sign.taurus.strengths" = "Grounded, loyal, sensual.";
 "sign.taurus.weaknesses" = "Rigid, possessive, resistant to change.";
 "sign.taurus.love" = "Seeks stability, touch, and trust.";
 "sign.taurus.career" = "Excellent in finance, craft, and design.";
 "sign.taurus.color" = "Emerald";
 "sign.taurus.stone" = "Rose quartz";
-
 "sign.gemini.name" = "Gemini";
-"sign.gemini.gift" = "curious intelligence";
-"sign.gemini.shadow" = "scattered focus";
-"sign.gemini.mantra" = "I connect and transform through words";
-"sign.gemini.strengths" = "Adaptable, witty, social.";
-"sign.gemini.weaknesses" = "Restless, inconsistent, overthinking.";
+"sign.gemini.strengths" = "Versatile, witty, social.";
+"sign.gemini.weaknesses" = "Restless, inconsistent, overthinks.";
 "sign.gemini.love" = "Needs mental spark and playfulness.";
-"sign.gemini.career" = "Shines in media, writing, teaching.";
+"sign.gemini.career" = "Shines in media, writing, and teaching.";
 "sign.gemini.color" = "Sun yellow";
 "sign.gemini.stone" = "Citrine";
-
 "sign.cancer.name" = "Cancer";
-"sign.cancer.gift" = "empathic care";
-"sign.cancer.shadow" = "defensive retreat";
-"sign.cancer.mantra" = "I nurture and receive";
 "sign.cancer.strengths" = "Intuitive, protective, loyal.";
 "sign.cancer.weaknesses" = "Moody, guarded, nostalgic.";
-"sign.cancer.love" = "Craves emotional safety and tenderness.";
-"sign.cancer.career" = "Strong in care, healing, hospitality.";
+"sign.cancer.love" = "Needs emotional safety and tenderness.";
+"sign.cancer.career" = "Strong in care, healing, and hospitality.";
 "sign.cancer.color" = "Pearl white";
 "sign.cancer.stone" = "Moonstone";
-
 "sign.leo.name" = "Leo";
-"sign.leo.gift" = "radiant confidence";
-"sign.leo.shadow" = "ego armor";
-"sign.leo.mantra" = "I shine and inspire";
 "sign.leo.strengths" = "Generous, charismatic, creative.";
-"sign.leo.weaknesses" = "Proud, dramatic, validation-seeking.";
-"sign.leo.love" = "Wants warmth, devotion, admiration.";
-"sign.leo.career" = "Great in leadership and stage presence.";
+"sign.leo.weaknesses" = "Proud, dramatic, seeks validation.";
+"sign.leo.love" = "Wants warmth, devotion, and admiration.";
+"sign.leo.career" = "Very strong in leadership and public presence.";
 "sign.leo.color" = "Gold";
 "sign.leo.stone" = "Sunstone";
-
 "sign.virgo.name" = "Virgo";
-"sign.virgo.gift" = "precise discernment";
-"sign.virgo.shadow" = "perfectionism";
-"sign.virgo.mantra" = "I refine with kindness";
-"sign.virgo.strengths" = "Analytical, practical, dependable.";
-"sign.virgo.weaknesses" = "Critical, anxious, rigid routines.";
+"sign.virgo.strengths" = "Analytical, practical, reliable.";
+"sign.virgo.weaknesses" = "Critical, anxious, rigid with routines.";
 "sign.virgo.love" = "Needs reliability and subtle affection.";
-"sign.virgo.career" = "Excellent in analysis, health, systems.";
+"sign.virgo.career" = "Excellent in analysis, health, and systems.";
 "sign.virgo.color" = "Sage green";
 "sign.virgo.stone" = "Jade";
-
 "sign.libra.name" = "Libra";
-"sign.libra.gift" = "harmonic vision";
-"sign.libra.shadow" = "indecision";
-"sign.libra.mantra" = "I choose balance with truth";
 "sign.libra.strengths" = "Diplomatic, elegant, fair.";
-"sign.libra.weaknesses" = "People-pleasing, avoidant.";
+"sign.libra.weaknesses" = "People-pleasing, conflict-avoidant.";
 "sign.libra.love" = "Seeks partnership and shared beauty.";
-"sign.libra.career" = "Strong in law, design, mediation.";
+"sign.libra.career" = "Strong in law, design, and mediation.";
 "sign.libra.color" = "Rose";
 "sign.libra.stone" = "Opal";
-
 "sign.scorpio.name" = "Scorpio";
-"sign.scorpio.gift" = "transformative depth";
-"sign.scorpio.shadow" = "control";
-"sign.scorpio.mantra" = "I trust deep change";
 "sign.scorpio.strengths" = "Intense, strategic, loyal.";
-"sign.scorpio.weaknesses" = "Jealous, secretive, absolute.";
-"sign.scorpio.love" = "Craves depth and emotional truth.";
+"sign.scorpio.weaknesses" = "Jealous, reserved, extreme.";
+"sign.scorpio.love" = "Seeks depth and emotional truth.";
 "sign.scorpio.career" = "Powerful in research and strategy.";
 "sign.scorpio.color" = "Obsidian";
 "sign.scorpio.stone" = "Garnet";
-
 "sign.sagittarius.name" = "Sagittarius";
-"sign.sagittarius.gift" = "expansive vision";
-"sign.sagittarius.shadow" = "reckless freedom";
-"sign.sagittarius.mantra" = "I seek truth with joy";
-"sign.sagittarius.strengths" = "Optimistic, adventurous, candid.";
-"sign.sagittarius.weaknesses" = "Blunt, restless, overpromising.";
+"sign.sagittarius.strengths" = "Optimistic, adventurous, sincere.";
+"sign.sagittarius.weaknesses" = "Blunt, restless, overpromises.";
 "sign.sagittarius.love" = "Needs freedom and shared adventure.";
-"sign.sagittarius.career" = "Thrives in travel, teaching, publishing.";
+"sign.sagittarius.career" = "Excels in travel, teaching, and publishing.";
 "sign.sagittarius.color" = "Indigo";
 "sign.sagittarius.stone" = "Lapis lazuli";
-
 "sign.capricorn.name" = "Capricorn";
-"sign.capricorn.gift" = "enduring mastery";
-"sign.capricorn.shadow" = "rigidity";
-"sign.capricorn.mantra" = "I rise with integrity";
 "sign.capricorn.strengths" = "Disciplined, strategic, resilient.";
 "sign.capricorn.weaknesses" = "Coldness, work obsession, control.";
 "sign.capricorn.love" = "Values loyalty and long-term trust.";
-"sign.capricorn.career" = "Strong in management and operations.";
+"sign.capricorn.career" = "Very solid in management and operations.";
 "sign.capricorn.color" = "Charcoal";
 "sign.capricorn.stone" = "Onyx";
-
 "sign.aquarius.name" = "Aquarius";
-"sign.aquarius.gift" = "visionary originality";
-"sign.aquarius.shadow" = "detachment";
-"sign.aquarius.mantra" = "I innovate for the collective";
 "sign.aquarius.strengths" = "Inventive, independent, humanitarian.";
 "sign.aquarius.weaknesses" = "Detached, stubborn, unpredictable.";
 "sign.aquarius.love" = "Needs freedom and intellectual bond.";
-"sign.aquarius.career" = "Excellent in tech and social systems.";
+"sign.aquarius.career" = "Excellent in technology and social systems.";
 "sign.aquarius.color" = "Electric blue";
 "sign.aquarius.stone" = "Amethyst";
-
 "sign.pisces.name" = "Pisces";
-"sign.pisces.gift" = "mystic compassion";
-"sign.pisces.shadow" = "escapism";
-"sign.pisces.mantra" = "I flow with grace";
 "sign.pisces.strengths" = "Empathic, artistic, spiritual.";
-"sign.pisces.weaknesses" = "Boundary issues, idealism, avoidance.";
+"sign.pisces.weaknesses" = "Blurred boundaries, idealism, avoidance.";
 "sign.pisces.love" = "Seeks soulful intimacy and tenderness.";
 "sign.pisces.career" = "Shines in arts and healing practices.";
 "sign.pisces.color" = "Seafoam";
 "sign.pisces.stone" = "Aquamarine";
-
-"onboarding.city.helper" = "Write your birth city and we will find coordinates automatically.";
+"onboarding.city.helper" = "Write your birth city and we will find the coordinates automatically.";
 "onboarding.city.loading" = "Searching city coordinates...";
-"onboarding.city.error.empty" = "Please enter a city name.";
-"onboarding.city.error.notfound" = "We couldn't find that city. Try adding country, e.g. \"Seville, Spain\".";
-"onboarding.city.error.network" = "Network error while searching city. Try again.";
+"onboarding.city.error.empty" = "Enter the name of a city.";
+"onboarding.city.error.notfound" = "We could not find that city. Try adding country, for example: \"Seville, Spain\".";
+"onboarding.city.error.network" = "Network error while searching for city. Try again.";
 "onboarding.city.error.denied" = "Location services are blocked for this app.";
-"onboarding.city.error.generic" = "We couldn't resolve that city right now. Please try again.";
-"onboarding.city.confirm" = "Use this city";
+"onboarding.city.error.generic" = "We could not resolve that city right now. Try again.";
 "onboarding.city.confirmed" = "City recognized";
-"onboarding.city.coords" = "Coordinates";
-"weekly.sun.short" = "Sun";
-"weekly.asc.short" = "Asc";
-"weekly.sun.full" = "Sun Sign";
-"weekly.asc.full" = "Rising Sign";
-"weekly.forecast.title" = "Weekly Forecast";
-"weekly.forecast.empty" = "Your forecast will appear here in a moment.";
-"weekly.footer.1" = "Small steps this week can open bigger doors than expected.";
-"weekly.footer.2" = "Protect your peace and your timing; both are part of your power.";
-"weekly.footer.3" = "What you choose not to carry is as important as what you pursue.";
-"weekly.footer.4" = "Keep your focus close; clarity is your best advantage now.";
-"weekly.footer.5" = "The right pace will beat the fast pace this week.";
-"weekly.footer.6" = "Trust the quiet progress. It is more solid than it looks.";
-"weekly.footer.7" = "Your consistency is building momentum even when it feels subtle.";
-"weekly.footer.8" = "Say yes to what expands you, and no to what drains you.";
-"weekly.footer.9" = "This is a good week to simplify and reclaim your energy.";
-"weekly.footer.10" = "One honest conversation can shift more than ten perfect plans.";
-"weekly.footer.11" = "You do not need to force outcomes; just stay aligned with your next step.";
-"weekly.footer.12" = "Calm decisions now will save you noise later.";
-"weekly.footer.13" = "Your intuition is sharp. Pair it with practical action.";
-"weekly.footer.14" = "Let your priorities be visible in your schedule, not only in your mind.";
-"weekly.footer.15" = "You are closer than you think; keep the rhythm.";
+"weekly.sun.full" = "Sun sign";
+"weekly.asc.full" = "Rising sign";
+"weekly.forecast.title" = "Weekly forecast";
+"ai.model.loading" = "Loading weekly forecast";

@@ -3,15 +3,9 @@ import SwiftUI
 struct CosmicBackgroundView: View {
     var body: some View {
         ZStack {
-            LinearGradient(
-                colors: [
-                    AppTheme.Colors.cosmicGradientTop,
-                    AppTheme.Colors.cosmicGradientMiddle,
-                    AppTheme.Colors.cosmicGradientBottom
-                ],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
+            Image("CosmicBackground")
+                .resizable()
+                .scaledToFill()
 
             RadialGradient(
                 colors: [AppTheme.Colors.nebulaViolet.opacity(0.35), .clear],

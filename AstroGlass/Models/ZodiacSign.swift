@@ -22,6 +22,10 @@ enum ZodiacSign: String, CaseIterable, Codable, Identifiable {
         }
     }
 
+    var assetName: String {
+        "Zodiac\(rawValue.prefix(1).uppercased())\(rawValue.dropFirst())"
+    }
+
     var nameKey: String { "sign.\(rawValue).name" }
     var strengthsKey: String { "sign.\(rawValue).strengths" }
     var weaknessesKey: String { "sign.\(rawValue).weaknesses" }

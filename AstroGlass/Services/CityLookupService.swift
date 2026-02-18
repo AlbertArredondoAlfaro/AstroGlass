@@ -1,5 +1,5 @@
-import CoreLocation
 import Foundation
+import MapKit
 
 struct CityLookupService: Sendable {
     struct GeocodedPlace: Sendable {
@@ -64,14 +64,21 @@ struct CityLookupService: Sendable {
             )
         } catch let error as LookupError {
             throw error
-        } catch let error as CLError {
+        } catch let error as MKError {
             switch error.code {
-            case .network:
-                throw LookupError.network
-            case .denied:
-                throw LookupError.denied
-            case .geocodeFoundNoResult, .geocodeFoundPartialResult:
+            case .placemarkNotFound:
                 throw LookupError.notFound
+            case .serverFailure:
+                throw LookupError.network
+            case .directionsNotFound:
+                throw LookupError.notFound
+            default:
+                throw LookupError.unknown
+            }
+        } catch let error as URLError {
+            switch error.code {
+            case .notConnectedToInternet, .networkConnectionLost, .timedOut, .cannotFindHost, .cannotConnectToHost:
+                throw LookupError.network
             default:
                 throw LookupError.unknown
             }
@@ -81,26 +88,26 @@ struct CityLookupService: Sendable {
     }
 
     private static func systemGeocode(_ query: String) async throws -> [GeocodedPlace] {
-        let geocoder = CLGeocoder()
-        return try await withCheckedThrowingContinuation { continuation in
-            geocoder.geocodeAddressString(query) { placemarks, error in
-                if let error {
-                    continuation.resume(throwing: error)
-                    return
-                }
-                let results = (placemarks ?? []).map {
-                    GeocodedPlace(
-                        name: $0.name,
-                        locality: $0.locality,
-                        subLocality: $0.subLocality,
-                        country: $0.country,
-                        latitude: $0.location?.coordinate.latitude,
-                        longitude: $0.location?.coordinate.longitude,
-                        timeZoneId: $0.timeZone?.identifier
-                    )
-                }
-                continuation.resume(returning: results)
-            }
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = query
+        request.resultTypes = [.address]
+
+        let search = MKLocalSearch(request: request)
+        let response = try await search.start()
+
+        return response.mapItems.map { item in
+            let address = item.address
+            let representations = item.addressRepresentations
+            let location = item.location
+            return GeocodedPlace(
+                name: item.name ?? address?.shortAddress ?? address?.fullAddress,
+                locality: representations?.cityName,
+                subLocality: representations?.cityWithContext,
+                country: representations?.regionName,
+                latitude: location.coordinate.latitude,
+                longitude: location.coordinate.longitude,
+                timeZoneId: TimeZone.current.identifier
+            )
         }
     }
 }

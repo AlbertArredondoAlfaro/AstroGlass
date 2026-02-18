@@ -21,11 +21,14 @@ final class AppModel {
 
     var weeklyHoroscope: Horoscope?
     var isLoadingHoroscope = false
+    var isLoadingAIModel = false
 
     let horoscopeService = HoroscopeService()
     let purchaseService = PurchaseService()
     let adService = AdService()
     let notificationScheduler = NotificationScheduler()
+    private var horoscopeTask: Task<Void, Never>?
+    private var lastForecastLanguageCode: String?
 
     init() {
         hasCompletedOnboarding = defaults.bool(forKey: DefaultsKeys.hasCompletedOnboarding)
@@ -34,15 +37,25 @@ final class AppModel {
     }
 
     func bootstrap() async {
+        refreshHoroscope()
+
+        let hasRequestedNotificationPermission = defaults.bool(forKey: DefaultsKeys.notificationsPermissionRequested)
+        if !hasRequestedNotificationPermission,
+           await notificationScheduler.authorizationStatus() == .notDetermined {
+            let granted = await notificationScheduler.requestAuthorizationIfNeeded()
+            defaults.set(true, forKey: DefaultsKeys.notificationsPermissionRequested)
+            notificationsEnabled = granted
+        }
+
         await purchaseService.bootstrap()
         adService.isRemoveAdsPurchased = purchaseService.isPurchased
         await adService.bootstrap()
 
         if notificationsEnabled {
             await notificationScheduler.scheduleWeekly()
+        } else {
+            notificationScheduler.cancelWeekly()
         }
-
-        refreshHoroscope()
     }
 
     func updateProfile(name: String, birthDate: Date, birthTime: BirthTime?, city: City) {
@@ -74,20 +87,46 @@ final class AppModel {
     }
 
     func refreshHoroscope(for date: Date = Date()) {
-        guard let profile else { return }
-
-        isLoadingHoroscope = true
-        let week = Calendar.current.component(.weekOfYear, from: date)
-        let generated = horoscopeService.weeklyHoroscope(
-            for: profile.sunSign,
-            risingSign: profile.risingSign,
-            weekOfYear: week
-        )
-
-        withAnimation(.spring(response: 0.58, dampingFraction: 0.62)) {
-            weeklyHoroscope = generated
+        guard let profile else {
+            weeklyHoroscope = nil
             isLoadingHoroscope = false
+            isLoadingAIModel = false
+            return
         }
+
+        horoscopeTask?.cancel()
+        isLoadingHoroscope = true
+        isLoadingAIModel = true
+        let week = Calendar.current.component(.weekOfYear, from: date)
+        let yearForWeekOfYear = Calendar.current.component(.yearForWeekOfYear, from: date)
+        let service = horoscopeService
+        let languageCode = CoreMLForecastService.shared.currentLanguageCode()
+
+        horoscopeTask = Task { [weak self, profile, week, yearForWeekOfYear, service, languageCode] in
+            let generated = await Task.detached(priority: .userInitiated) {
+                await service.weeklyHoroscope(
+                    for: profile.sunSign,
+                    risingSign: profile.risingSign,
+                    weekOfYear: week,
+                    yearForWeekOfYear: yearForWeekOfYear,
+                    profileID: profile.id
+                )
+            }.value
+
+            guard let self, !Task.isCancelled else { return }
+            withAnimation(.spring(response: 0.58, dampingFraction: 0.62)) {
+                self.weeklyHoroscope = generated
+                self.isLoadingHoroscope = false
+                self.isLoadingAIModel = false
+                self.lastForecastLanguageCode = languageCode
+            }
+        }
+    }
+
+    func refreshHoroscopeIfLanguageChanged() {
+        let currentLanguage = CoreMLForecastService.shared.currentLanguageCode()
+        guard currentLanguage != lastForecastLanguageCode else { return }
+        refreshHoroscope()
     }
 
     func toggleNotifications() async {
@@ -129,4 +168,5 @@ final class AppModel {
         profile = decoded
         hasCompletedOnboarding = true
     }
+
 }
