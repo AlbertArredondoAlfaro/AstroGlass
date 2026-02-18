@@ -35,7 +35,6 @@
 		5DB5594E144AAB0560D0F1BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D957E31D0A2BC860EDAD1BDE /* Localizable.strings */; };
 		5E14D827FA7B6E74CE488CFB /* AdBannerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2293A012BAF853A2B2261B /* AdBannerContainerView.swift */; };
 		6B8D9599672156C6F46F945E /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4943AC0F2986C1693C08F5 /* Horoscope.swift */; };
-		734F240E0580A69599C33FDE /* qwen2.5-1.5b-instruct-q4_k_m.gguf in Resources */ = {isa = PBXBuildFile; fileRef = 462DC7B482FBC8F8A8EC2F66 /* qwen2.5-1.5b-instruct-q4_k_m.gguf */; };
 		74DF61A1E508CEDD8543C1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D600367BCF53527A27AAFE1D /* Assets.xcassets */; };
 		7F273FE400597F1C3F391FBC /* AppButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7280CDA3576D13D9C8E3754 /* AppButtonStyles.swift */; };
 		84C15C34C1B5C4D770746A2A /* AstroGlassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE9784F0D685F0E500EA63 /* AstroGlassTests.swift */; };
@@ -90,7 +89,6 @@
 		435F879DCBBB977EC4F067C2 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		446672CA973F7F78DDDCFEC6 /* CityLookupServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityLookupServiceTests.swift; sourceTree = "<group>"; };
 		456654B9039C02FCB1A02F24 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
-		462DC7B482FBC8F8A8EC2F66 /* qwen2.5-1.5b-instruct-q4_k_m.gguf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "qwen2.5-1.5b-instruct-q4_k_m.gguf"; sourceTree = "<group>"; };
 		4B9D362B28D0466251262C85 /* SignsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignsGridView.swift; sourceTree = "<group>"; };
 		4C9E5502BC65AADBE7669197 /* GlowSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowSymbolView.swift; sourceTree = "<group>"; };
 		53FD08FEF2E4F6548642C6F8 /* ParticleBurstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleBurstView.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 		A4B9C9D2A7159344D1C7C64D /* af */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = af; path = af.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A7280CDA3576D13D9C8E3754 /* AppButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyles.swift; sourceTree = "<group>"; };
 		A73412F6B235F0758BE7147C /* ZodiacCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacCalculator.swift; sourceTree = "<group>"; };
-		A780357A2072BA70E9B09C66 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		AE1E76C0BEF6E61CB787C969 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B7804E863B68BA1CA0F428ED /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		BAE8E9C2E7A6EF7D6665ED5D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -155,15 +152,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BCE844D31596313FF939247 /* MLModels */ = {
-			isa = PBXGroup;
-			children = (
-				A780357A2072BA70E9B09C66 /* .gitkeep */,
-				462DC7B482FBC8F8A8EC2F66 /* qwen2.5-1.5b-instruct-q4_k_m.gguf */,
-			);
-			path = MLModels;
-			sourceTree = "<group>";
-		};
 		1A8AF270C9B2DFA098C66AE8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +172,6 @@
 				F6C1943781F42E84CD9ADF16 /* Launch Screen.storyboard */,
 				D957E31D0A2BC860EDAD1BDE /* Localizable.strings */,
 				A41D979271FADC141C040F72 /* zodiac-sheet.jpg */,
-				0BCE844D31596313FF939247 /* MLModels */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -429,7 +416,6 @@
 				4EE789FA567F9871EE168054 /* InfoPlist.strings in Resources */,
 				217A2249225022AF88D2F237 /* Launch Screen.storyboard in Resources */,
 				5DB5594E144AAB0560D0F1BA /* Localizable.strings in Resources */,
-				734F240E0580A69599C33FDE /* qwen2.5-1.5b-instruct-q4_k_m.gguf in Resources */,
 				FDA163A394AB8C4EA8A3CAAF /* zodiac-sheet.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
