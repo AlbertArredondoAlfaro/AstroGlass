@@ -9,7 +9,7 @@
 "action.cancel" = "रद्द करें";
 "action.save" = "सहेजें";
 
-"onboarding.title.name" = "Astro AI में आपका स्वागत है";
+"onboarding.title.name" = "Astro Zodiac AI में आपका स्वागत है";
 "onboarding.subtitle.name" = "आपका नाम क्या है?";
 "onboarding.placeholder.name" = "आपका नाम";
 "onboarding.subtitle.birthdate" = "अपनी जन्मतिथि चुनें";
@@ -21,6 +21,10 @@
 
 "profile.title" = "प्रोफ़ाइल";
 "profile.edit" = "प्रोफ़ाइल संपादित करें";
+"profile.reset" = "प्रोफ़ाइल रीसेट करें";
+"profile.reset.confirm.title" = "प्रोफ़ाइल रीसेट करें?";
+"profile.reset.confirm.message" = "आप ऑनबोर्डिंग पर वापस जाएंगे। सेव करने से पहले आप अपना डेटा देख और बदल सकते हैं।";
+"profile.reset.confirm.cta" = "जारी रखें";
 "profile.notifications" = "साप्ताहिक सूचना";
 "profile.notifications.subtitle" = "हर सोमवार सुबह 10:00 (स्थानीय समय)।";
 "profile.removeads.title" = "विज्ञापन हटाएँ";
@@ -30,7 +34,7 @@
 "profile.removeads.restore" = "खरीद पुनर्स्थापित करें";
 "profile.removeads.pricefallback" = "4.99 €";
 
-"signs.title" = "सभी राशियाँ";
+"signs.title" = "राशि प्रतीक";
 "sign.detail.strengths" = "ताकत";
 "sign.detail.weaknesses" = "कमज़ोरियाँ";
 "sign.detail.love" = "प्रेम";
@@ -39,7 +43,7 @@
 "sign.detail.stone" = "रत्न";
 
 "notification.weekly.title" = "आपका साप्ताहिक राशिफल तैयार है ✨";
-"notification.weekly.body" = "Astro AI खोलें और अपना कॉस्मिक मार्गदर्शन पढ़ें।";
+"notification.weekly.body" = "Astro Zodiac AI खोलें और अपना कॉस्मिक मार्गदर्शन पढ़ें।";
 
 "element.fire" = "अग्नि";
 "element.earth" = "पृथ्वी";

@@ -9,7 +9,7 @@
 "action.cancel" = "Отмена";
 "action.save" = "Сохранить";
 
-"onboarding.title.name" = "Добро пожаловать в Astro AI";
+"onboarding.title.name" = "Добро пожаловать в Astro Zodiac AI";
 "onboarding.subtitle.name" = "Как вас зовут?";
 "onboarding.placeholder.name" = "Ваше имя";
 "onboarding.subtitle.birthdate" = "Выберите дату рождения";
@@ -21,6 +21,10 @@
 
 "profile.title" = "Профиль";
 "profile.edit" = "Редактировать профиль";
+"profile.reset" = "Сбросить профиль";
+"profile.reset.confirm.title" = "Сбросить профиль?";
+"profile.reset.confirm.message" = "Вы вернетесь к онбордингу. Перед сохранением можно проверить и изменить данные.";
+"profile.reset.confirm.cta" = "Продолжить";
 "profile.notifications" = "Еженедельное уведомление";
 "profile.notifications.subtitle" = "Каждый понедельник в 10:00 (местное время).";
 "profile.removeads.title" = "Убрать рекламу";
@@ -30,7 +34,7 @@
 "profile.removeads.restore" = "Восстановить покупки";
 "profile.removeads.pricefallback" = "4.99 €";
 
-"signs.title" = "Все знаки";
+"signs.title" = "Символы зодиака";
 "sign.detail.strengths" = "Сильные стороны";
 "sign.detail.weaknesses" = "Слабые стороны";
 "sign.detail.love" = "Любовь";
@@ -39,7 +43,7 @@
 "sign.detail.stone" = "Камень";
 
 "notification.weekly.title" = "Ваш недельный гороскоп готов ✨";
-"notification.weekly.body" = "Откройте Astro AI и прочитайте космическое руководство.";
+"notification.weekly.body" = "Откройте Astro Zodiac AI и прочитайте космическое руководство.";
 
 "element.fire" = "Огонь";
 "element.earth" = "Земля";

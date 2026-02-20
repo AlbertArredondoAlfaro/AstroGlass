@@ -9,7 +9,7 @@
 "action.cancel" = "キャンセル";
 "action.save" = "保存";
 
-"onboarding.title.name" = "Astro AIへようこそ";
+"onboarding.title.name" = "Astro Zodiac AIへようこそ";
 "onboarding.subtitle.name" = "お名前は？";
 "onboarding.placeholder.name" = "あなたの名前";
 "onboarding.subtitle.birthdate" = "生年月日を選択";
@@ -21,6 +21,10 @@
 
 "profile.title" = "プロフィール";
 "profile.edit" = "プロフィールを編集";
+"profile.reset" = "プロフィールをリセット";
+"profile.reset.confirm.title" = "プロフィールをリセットしますか？";
+"profile.reset.confirm.message" = "オンボーディングに戻ります。保存前にデータを確認・変更できます。";
+"profile.reset.confirm.cta" = "続ける";
 "profile.notifications" = "週間通知";
 "profile.notifications.subtitle" = "毎週月曜 10:00（現地時間）。";
 "profile.removeads.title" = "広告を削除";
@@ -30,7 +34,7 @@
 "profile.removeads.restore" = "購入を復元";
 "profile.removeads.pricefallback" = "4.99 €";
 
-"signs.title" = "すべての星座";
+"signs.title" = "星座シンボル";
 "sign.detail.strengths" = "強み";
 "sign.detail.weaknesses" = "弱み";
 "sign.detail.love" = "恋愛";
@@ -39,7 +43,7 @@
 "sign.detail.stone" = "石";
 
 "notification.weekly.title" = "今週のホロスコープが準備できました ✨";
-"notification.weekly.body" = "Astro AIを開いて、宇宙のガイダンスを読みましょう。";
+"notification.weekly.body" = "Astro Zodiac AIを開いて、宇宙のガイダンスを読みましょう。";
 
 "element.fire" = "火";
 "element.earth" = "地";

@@ -9,7 +9,7 @@
 "action.cancel" = "Cancelar";
 "action.save" = "Guardar";
 
-"onboarding.title.name" = "Bienvenido a Astro AI";
+"onboarding.title.name" = "Bienvenido a Astro Zodiac AI";
 "onboarding.subtitle.name" = "¿Cómo te llamas?";
 "onboarding.placeholder.name" = "Tu nombre";
 "onboarding.subtitle.birthdate" = "Elige tu fecha de nacimiento";
@@ -21,6 +21,10 @@
 
 "profile.title" = "Perfil";
 "profile.edit" = "Editar perfil";
+"profile.reset" = "Reiniciar perfil";
+"profile.reset.confirm.title" = "¿Reiniciar perfil?";
+"profile.reset.confirm.message" = "Vas a volver al onboarding. Podrás revisar y cambiar tus datos antes de guardar.";
+"profile.reset.confirm.cta" = "Continuar";
 "profile.notifications" = "Notificación semanal";
 "profile.notifications.subtitle" = "Cada lunes a las 10:00 (hora local).";
 "profile.removeads.title" = "Quitar anuncios";
@@ -30,7 +34,7 @@
 "profile.removeads.restore" = "Restaurar compras";
 "profile.removeads.pricefallback" = "4.99 €";
 
-"signs.title" = "Todos los signos";
+"signs.title" = "Símbolos del Zodiaco";
 "sign.detail.strengths" = "Fortalezas";
 "sign.detail.weaknesses" = "Debilidades";
 "sign.detail.love" = "Amor";
@@ -39,7 +43,7 @@
 "sign.detail.stone" = "Piedra";
 
 "notification.weekly.title" = "Tu horóscopo semanal ya está listo ✨";
-"notification.weekly.body" = "Abre Astro AI y lee tu guía cósmica.";
+"notification.weekly.body" = "Abre Astro Zodiac AI y lee tu guía cósmica.";
 
 "element.fire" = "Fuego";
 "element.earth" = "Tierra";
