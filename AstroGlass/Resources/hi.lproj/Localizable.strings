@@ -27,12 +27,6 @@
 "profile.reset.confirm.cta" = "जारी रखें";
 "profile.notifications" = "साप्ताहिक सूचना";
 "profile.notifications.subtitle" = "हर सोमवार सुबह 10:00 (स्थानीय समय)।";
-"profile.removeads.title" = "विज्ञापन हटाएँ";
-"profile.removeads.subtitle" = "बिना विज्ञापन का अनुभव अनलॉक करें।";
-"profile.removeads.active" = "विज्ञापन पहले से बंद हैं।";
-"profile.removeads.buy" = "विज्ञापन हटाएँ";
-"profile.removeads.restore" = "खरीद पुनर्स्थापित करें";
-"profile.removeads.pricefallback" = "4.99 €";
 
 "signs.title" = "राशि प्रतीक";
 "sign.detail.strengths" = "ताकत";

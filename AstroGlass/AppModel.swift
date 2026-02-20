@@ -24,8 +24,6 @@ final class AppModel {
     var isLoadingAIModel = false
 
     let horoscopeService = HoroscopeService()
-    let purchaseService = PurchaseService()
-    let adService = AdService()
     let notificationScheduler = NotificationScheduler()
     private var horoscopeTask: Task<Void, Never>?
     private var lastForecastLanguageCode: String?
@@ -46,10 +44,6 @@ final class AppModel {
             defaults.set(true, forKey: DefaultsKeys.notificationsPermissionRequested)
             notificationsEnabled = granted
         }
-
-        await purchaseService.bootstrap()
-        adService.isRemoveAdsPurchased = purchaseService.isPurchased
-        await adService.bootstrap()
 
         if notificationsEnabled {
             await notificationScheduler.scheduleWeekly()
@@ -135,10 +129,6 @@ final class AppModel {
         } else {
             notificationScheduler.cancelWeekly()
         }
-    }
-
-    func syncPurchaseState() {
-        adService.isRemoveAdsPurchased = purchaseService.isPurchased
     }
 
     private func persistProfile() {

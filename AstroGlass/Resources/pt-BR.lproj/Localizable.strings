@@ -27,12 +27,6 @@
 "profile.reset.confirm.cta" = "Continuar";
 "profile.notifications" = "Notificação semanal";
 "profile.notifications.subtitle" = "Toda segunda às 10:00 (hora local).";
-"profile.removeads.title" = "Remover anúncios";
-"profile.removeads.subtitle" = "Desbloqueie uma experiência sem anúncios.";
-"profile.removeads.active" = "Os anúncios já estão desativados.";
-"profile.removeads.buy" = "Remover anúncios";
-"profile.removeads.restore" = "Restaurar compras";
-"profile.removeads.pricefallback" = "4.99 €";
 
 "signs.title" = "Símbolos do Zodíaco";
 "sign.detail.strengths" = "Forças";

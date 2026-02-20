@@ -15,8 +15,6 @@
 		217A2249225022AF88D2F237 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C1943781F42E84CD9ADF16 /* Launch Screen.storyboard */; };
 		2622D36BA0BC18F641CC1A72 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640B2831CF686343E3336ED8 /* UserProfile.swift */; };
 		27CA59D767FDE661CA1E7B52 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E7188F2665D8C82C29441 /* City.swift */; };
-		284D0495AD553BB121AE6677 /* AdService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581267BA80FDF74AB2858BC4 /* AdService.swift */; };
-		34AA27D8E9A32C4B60981AC1 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 80632BF08AF79906D6AA4AC9 /* GoogleMobileAds */; };
 		378B2AF12DD1D2BD131DD118 /* OnboardingFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309A469B36BCAFF443056302 /* OnboardingFlowTests.swift */; };
 		480C8399F9A60B63864CA721 /* CosmicBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8555B9BEC3E995837BD6C282 /* CosmicBackgroundView.swift */; };
 		4ADBA01C996E9086D5044283 /* GlassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456654B9039C02FCB1A02F24 /* GlassCard.swift */; };
@@ -30,10 +28,8 @@
 		5476D970E6E0C35474AA83B6 /* Date+BirthTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FA40716F7A7EBDEB50A8A9 /* Date+BirthTime.swift */; };
 		5494879F1752CE62B7D93DBF /* HoroscopeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE9748FAC5F39F25A4EDFB /* HoroscopeService.swift */; };
 		5830F0FFD28EC7D12A54613A /* ParticleBurstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FD08FEF2E4F6548642C6F8 /* ParticleBurstView.swift */; };
-		5A58A5F16FD2E4AA9CFC50E4 /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933E926B09C42578102BD30F /* PurchaseService.swift */; };
 		5D599A0C25C0A9B56E6D6E24 /* LlamaOnDeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D5E296ACE15C8D62F74524 /* LlamaOnDeviceService.swift */; };
 		5DB5594E144AAB0560D0F1BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D957E31D0A2BC860EDAD1BDE /* Localizable.strings */; };
-		5E14D827FA7B6E74CE488CFB /* AdBannerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2293A012BAF853A2B2261B /* AdBannerContainerView.swift */; };
 		6B8D9599672156C6F46F945E /* Horoscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4943AC0F2986C1693C08F5 /* Horoscope.swift */; };
 		74DF61A1E508CEDD8543C1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D600367BCF53527A27AAFE1D /* Assets.xcassets */; };
 		7F273FE400597F1C3F391FBC /* AppButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7280CDA3576D13D9C8E3754 /* AppButtonStyles.swift */; };
@@ -50,9 +46,9 @@
 		C418E823C41987B7B879A34F /* CoreMLForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64BB290AF5D3454F8B9C6E /* CoreMLForecastService.swift */; };
 		CE72EA936DE771B3CB5C56A4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03DF00F3AD3EF6AB5EDDBEC /* RootView.swift */; };
 		DC76D03B1597CB458CC7D5AB /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFD8611EFF5021791D1D7E1 /* AppModel.swift */; };
+		E4FCBD99D9B0E5716E829D50 /* zodiac-sheet-new.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 836F7816886A080B71403D7D /* zodiac-sheet-new.jpg */; };
 		EF3CBD86B1D783378AE92CDA /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543540BFE5FB907B9B4612D4 /* NotificationScheduler.swift */; };
 		F330180A1E23EF1A50885E6C /* UIApplication+TopMost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC153A7584A418288E4FFA8B /* UIApplication+TopMost.swift */; };
-		F42AF5D159081D26F798651C /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F9828F772900C0835CF06D /* AdBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		005182772DDB0540865C8575 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0309E3F15A4B699BC3D6554F /* SignDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignDetailView.swift; sourceTree = "<group>"; };
 		055E7188F2665D8C82C29441 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		05F9828F772900C0835CF06D /* AdBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerView.swift; sourceTree = "<group>"; };
 		0631B02EF05ABB47647192C2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		07470A12566ED5B456494DDF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		0980FCC07DA9F4A73D369A17 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
@@ -85,7 +79,6 @@
 		387CE35A8F916EA8B3235DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		38B50D328DEF2B695B2A76E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		41563E229F0EF34EC5E793B2 /* fil */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fil; path = fil.lproj/Localizable.strings; sourceTree = "<group>"; };
-		435F879DCBBB977EC4F067C2 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		446672CA973F7F78DDDCFEC6 /* CityLookupServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityLookupServiceTests.swift; sourceTree = "<group>"; };
 		456654B9039C02FCB1A02F24 /* GlassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassCard.swift; sourceTree = "<group>"; };
 		4B9D362B28D0466251262C85 /* SignsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignsGridView.swift; sourceTree = "<group>"; };
@@ -94,19 +87,18 @@
 		543540BFE5FB907B9B4612D4 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		56CBD06672A7263CD471058F /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
 		574117BC226AD41B52F05A57 /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
-		581267BA80FDF74AB2858BC4 /* AdService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdService.swift; sourceTree = "<group>"; };
 		640B2831CF686343E3336ED8 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		68645A991F2A6C1D62E78117 /* StarfieldCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarfieldCanvasView.swift; sourceTree = "<group>"; };
 		6B63234779E237FE703C98DD /* AscendantCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscendantCalculator.swift; sourceTree = "<group>"; };
 		716BD1FA1B141BA56F963F1A /* AstroGlass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroGlass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72730D7B55469E8DA432C5B8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7AC3DD349B25607FEE1CDE47 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		836F7816886A080B71403D7D /* zodiac-sheet-new.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zodiac-sheet-new.jpg"; sourceTree = "<group>"; };
 		8555B9BEC3E995837BD6C282 /* CosmicBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmicBackgroundView.swift; sourceTree = "<group>"; };
 		86248D0E2020617B9086D9FC /* DefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKeys.swift; sourceTree = "<group>"; };
 		8A56C5897160FB8E437BB3F4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		8CCC6628D7DD8B88560B4EF6 /* ZodiacSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSign.swift; sourceTree = "<group>"; };
 		91D5E296ACE15C8D62F74524 /* LlamaOnDeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlamaOnDeviceService.swift; sourceTree = "<group>"; };
-		933E926B09C42578102BD30F /* PurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
 		9764CCBD7A2E945DDB0E8A53 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A201DD714C218331F095892 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CE80BE75535536C57B201F4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -122,7 +114,6 @@
 		BEB44D1892B8407F47C85EA4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D3832056E9A74C0140DCEC86 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D600367BCF53527A27AAFE1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA2293A012BAF853A2B2261B /* AdBannerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBannerContainerView.swift; sourceTree = "<group>"; };
 		DC153A7584A418288E4FFA8B /* UIApplication+TopMost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopMost.swift"; sourceTree = "<group>"; };
 		DC64BB290AF5D3454F8B9C6E /* CoreMLForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLForecastService.swift; sourceTree = "<group>"; };
 		DC9C4107D411825FD15840DA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -137,17 +128,6 @@
 		F8AE9748FAC5F39F25A4EDFB /* HoroscopeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeService.swift; sourceTree = "<group>"; };
 		F93F2E92CF930C607662F2B7 /* AstroGlassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroGlassApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		2DCBD84D971A67DB0D31D9C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				34AA27D8E9A32C4B60981AC1 /* GoogleMobileAds in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1A8AF270C9B2DFA098C66AE8 /* Models */ = {
@@ -169,6 +149,7 @@
 				BFF95BEFA2EFE21DE98596AF /* InfoPlist.strings */,
 				F6C1943781F42E84CD9ADF16 /* Launch Screen.storyboard */,
 				D957E31D0A2BC860EDAD1BDE /* Localizable.strings */,
+				836F7816886A080B71403D7D /* zodiac-sheet-new.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -176,7 +157,6 @@
 		324A00B017948BE3CDD2F8E5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				581267BA80FDF74AB2858BC4 /* AdService.swift */,
 				6B63234779E237FE703C98DD /* AscendantCalculator.swift */,
 				A07030EC150F75D55F81BE08 /* CityLookupService.swift */,
 				DC64BB290AF5D3454F8B9C6E /* CoreMLForecastService.swift */,
@@ -184,7 +164,6 @@
 				F8AE9748FAC5F39F25A4EDFB /* HoroscopeService.swift */,
 				91D5E296ACE15C8D62F74524 /* LlamaOnDeviceService.swift */,
 				543540BFE5FB907B9B4612D4 /* NotificationScheduler.swift */,
-				933E926B09C42578102BD30F /* PurchaseService.swift */,
 				A73412F6B235F0758BE7147C /* ZodiacCalculator.swift */,
 			);
 			path = Services;
@@ -263,8 +242,6 @@
 		966704E91E895D9A9AE31D0B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				DA2293A012BAF853A2B2261B /* AdBannerContainerView.swift */,
-				05F9828F772900C0835CF06D /* AdBannerView.swift */,
 				8555B9BEC3E995837BD6C282 /* CosmicBackgroundView.swift */,
 				456654B9039C02FCB1A02F24 /* GlassCard.swift */,
 				4C9E5502BC65AADBE7669197 /* GlowSymbolView.swift */,
@@ -325,7 +302,6 @@
 			buildPhases = (
 				D88785D9E94DDBAE26BF3173 /* Sources */,
 				337C67044AD9EE4873FC58BA /* Resources */,
-				2DCBD84D971A67DB0D31D9C3 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,7 +309,6 @@
 			);
 			name = AstroGlass;
 			packageProductDependencies = (
-				80632BF08AF79906D6AA4AC9 /* GoogleMobileAds */,
 			);
 			productName = AstroGlass;
 			productReference = 716BD1FA1B141BA56F963F1A /* AstroGlass.app */;
@@ -378,7 +353,6 @@
 			knownRegions = (
 				Base,
 				af,
-				ca,
 				de,
 				en,
 				es,
@@ -392,9 +366,6 @@
 			);
 			mainGroup = 35F494B3CD9F79ECD2DFA72E;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				54FADA900185B2DBCDAB9A56 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
-			);
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -413,6 +384,7 @@
 				4EE789FA567F9871EE168054 /* InfoPlist.strings in Resources */,
 				217A2249225022AF88D2F237 /* Launch Screen.storyboard in Resources */,
 				5DB5594E144AAB0560D0F1BA /* Localizable.strings in Resources */,
+				E4FCBD99D9B0E5716E829D50 /* zodiac-sheet-new.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,9 +405,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E14D827FA7B6E74CE488CFB /* AdBannerContainerView.swift in Sources */,
-				F42AF5D159081D26F798651C /* AdBannerView.swift in Sources */,
-				284D0495AD553BB121AE6677 /* AdService.swift in Sources */,
 				7F273FE400597F1C3F391FBC /* AppButtonStyles.swift in Sources */,
 				05D56784B4E822AD19CBCF5F /* AppCardStyle.swift in Sources */,
 				DC76D03B1597CB458CC7D5AB /* AppModel.swift in Sources */,
@@ -460,7 +429,6 @@
 				5830F0FFD28EC7D12A54613A /* ParticleBurstView.swift in Sources */,
 				A000A528455DB42EC6BFD122 /* ProfileEditView.swift in Sources */,
 				91D4A32EBB75699D7FD0429B /* ProfileView.swift in Sources */,
-				5A58A5F16FD2E4AA9CFC50E4 /* PurchaseService.swift in Sources */,
 				CE72EA936DE771B3CB5C56A4 /* RootView.swift in Sources */,
 				BF0E8FEE4A0DAA25CFEC454E /* ShimmerPlaceholderView.swift in Sources */,
 				9941C5F030371D1C171BFB54 /* SignDetailView.swift in Sources */,
@@ -489,7 +457,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A4B9C9D2A7159344D1C7C64D /* af */,
-				005182772DDB0540865C8575 /* ca */,
 				9764CCBD7A2E945DDB0E8A53 /* de */,
 				BAE8E9C2E7A6EF7D6665ED5D /* en */,
 				9A201DD714C218331F095892 /* es */,
@@ -508,7 +475,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				F4B7CC5144C9F157BC6D9631 /* af */,
-				435F879DCBBB977EC4F067C2 /* ca */,
 				1A6335A0BF4C2DA96FE27E2A /* de */,
 				38B50D328DEF2B695B2A76E9 /* en */,
 				0631B02EF05ABB47647192C2 /* es */,
@@ -625,11 +591,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.idreamstudios.astroglass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.idreamstudios.astroai;
 				PRODUCT_NAME = AstroGlass;
 				SDKROOT = iphoneos;
 				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -725,11 +691,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.idreamstudios.astroglass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.idreamstudios.astroai;
 				PRODUCT_NAME = AstroGlass;
 				SDKROOT = iphoneos;
 				SWIFT_ENABLE_EXPLICIT_MODULES = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -764,25 +730,6 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		54FADA900185B2DBCDAB9A56 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 13.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		80632BF08AF79906D6AA4AC9 /* GoogleMobileAds */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 54FADA900185B2DBCDAB9A56 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
-			productName = GoogleMobileAds;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BAFC67425C20E70F6891B933 /* Project object */;
 }

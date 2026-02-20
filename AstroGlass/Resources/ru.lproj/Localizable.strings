@@ -27,12 +27,6 @@
 "profile.reset.confirm.cta" = "Продолжить";
 "profile.notifications" = "Еженедельное уведомление";
 "profile.notifications.subtitle" = "Каждый понедельник в 10:00 (местное время).";
-"profile.removeads.title" = "Убрать рекламу";
-"profile.removeads.subtitle" = "Откройте опыт без рекламы.";
-"profile.removeads.active" = "Реклама уже отключена.";
-"profile.removeads.buy" = "Убрать рекламу";
-"profile.removeads.restore" = "Восстановить покупки";
-"profile.removeads.pricefallback" = "4.99 €";
 
 "signs.title" = "Символы зодиака";
 "sign.detail.strengths" = "Сильные стороны";

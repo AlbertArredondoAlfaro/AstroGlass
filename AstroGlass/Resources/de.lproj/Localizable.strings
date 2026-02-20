@@ -27,12 +27,6 @@
 "profile.reset.confirm.cta" = "Weiter";
 "profile.notifications" = "Wöchentliche Benachrichtigung";
 "profile.notifications.subtitle" = "Jeden Montag um 10:00 Uhr (Ortszeit).";
-"profile.removeads.title" = "Werbung entfernen";
-"profile.removeads.subtitle" = "Schalte ein werbefreies Erlebnis frei.";
-"profile.removeads.active" = "Werbung ist bereits deaktiviert.";
-"profile.removeads.buy" = "Werbung entfernen";
-"profile.removeads.restore" = "Käufe wiederherstellen";
-"profile.removeads.pricefallback" = "4.99 €";
 
 "signs.title" = "Symbole des Tierkreises";
 "sign.detail.strengths" = "Stärken";
