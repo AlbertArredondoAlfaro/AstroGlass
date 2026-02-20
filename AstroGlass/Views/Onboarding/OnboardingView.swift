@@ -14,6 +14,7 @@ struct OnboardingView: View {
     @State private var cityErrorKey: String?
     @State private var isResolvingCity = false
     @State private var resolvedCity: City?
+    @State private var didPrefillFromProfile = false
 
     private var cardMaxWidth: CGFloat {
         horizontalSizeClass == .regular ? AppTheme.Metrics.cardMaxWidthRegular : AppTheme.Metrics.cardMaxWidthCompact
@@ -229,6 +230,7 @@ struct OnboardingView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
+        .onAppear(perform: prefillIfNeeded)
     }
 
     private func continueToNextStep() {
@@ -277,5 +279,20 @@ struct OnboardingView: View {
     private func finishOnboarding(with city: City) {
         let birthTimeValue: BirthTime? = hasExactTime ? birthTime.toBirthTime : nil
         model.updateProfile(name: trimmedName, birthDate: birthDate, birthTime: birthTimeValue, city: city)
+    }
+
+    private func prefillIfNeeded() {
+        guard !didPrefillFromProfile else { return }
+        didPrefillFromProfile = true
+        guard let profile = model.profile else { return }
+
+        name = profile.name
+        birthDate = profile.birthDate
+        cityName = profile.cityName
+        hasExactTime = profile.birthTime != nil
+        if let bt = profile.birthTime,
+           let date = Calendar.current.date(from: DateComponents(hour: bt.hour, minute: bt.minute)) {
+            birthTime = date
+        }
     }
 }

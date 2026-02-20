@@ -9,7 +9,7 @@
 "action.cancel" = "Kanselleer";
 "action.save" = "Stoor";
 
-"onboarding.title.name" = "Welkom by Astro AI";
+"onboarding.title.name" = "Welkom by Astro Zodiac AI";
 "onboarding.subtitle.name" = "Wat is jou naam?";
 "onboarding.placeholder.name" = "Jou naam";
 "onboarding.subtitle.birthdate" = "Kies jou geboortedatum";
@@ -21,6 +21,10 @@
 
 "profile.title" = "Profiel";
 "profile.edit" = "Wysig profiel";
+"profile.reset" = "Stel profiel terug";
+"profile.reset.confirm.title" = "Stel profiel terug?";
+"profile.reset.confirm.message" = "Jy sal teruggaan na onboarding. Jy kan jou data nagaan en verander voordat jy stoor.";
+"profile.reset.confirm.cta" = "Gaan voort";
 "profile.notifications" = "Weeklikse kennisgewing";
 "profile.notifications.subtitle" = "Elke Maandag om 10:00 plaaslike tyd.";
 "profile.removeads.title" = "Verwyder advertensies";
@@ -30,7 +34,7 @@
 "profile.removeads.restore" = "Herstel aankope";
 "profile.removeads.pricefallback" = "4.99 €";
 
-"signs.title" = "Alle tekens";
+"signs.title" = "Diereriem-simbole";
 "sign.detail.strengths" = "Sterkpunte";
 "sign.detail.weaknesses" = "Swakpunte";
 "sign.detail.love" = "Liefde";
@@ -39,7 +43,7 @@
 "sign.detail.stone" = "Steen";
 
 "notification.weekly.title" = "Jou weeklikse horoskoop is gereed ✨";
-"notification.weekly.body" = "Maak Astro AI oop en lees jou kosmiese leiding.";
+"notification.weekly.body" = "Maak Astro Zodiac AI oop en lees jou kosmiese leiding.";
 
 "element.fire" = "Vuur";
 "element.earth" = "Aarde";

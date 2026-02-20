@@ -9,7 +9,7 @@
 "action.cancel" = "Cancel·lar";
 "action.save" = "Desar";
 
-"onboarding.title.name" = "Benvingut a Astro AI";
+"onboarding.title.name" = "Benvingut a Astro Zodiac AI";
 "onboarding.subtitle.name" = "Com et dius?";
 "onboarding.placeholder.name" = "El teu nom";
 "onboarding.subtitle.birthdate" = "Tria la teva data de naixement";
@@ -21,6 +21,10 @@
 
 "profile.title" = "Perfil";
 "profile.edit" = "Editar perfil";
+"profile.reset" = "Reiniciar perfil";
+"profile.reset.confirm.title" = "Reiniciar el perfil?";
+"profile.reset.confirm.message" = "Tornaràs a l'onboarding. Podràs revisar i canviar les dades abans de desar.";
+"profile.reset.confirm.cta" = "Continuar";
 "profile.notifications" = "Notificació setmanal";
 "profile.notifications.subtitle" = "Cada dilluns a les 10:00 (hora local).";
 "profile.removeads.title" = "Treure anuncis";
@@ -30,7 +34,7 @@
 "profile.removeads.restore" = "Restaurar compres";
 "profile.removeads.pricefallback" = "4.99 €";
 
-"signs.title" = "Tots els signes";
+"signs.title" = "Símbols del Zodíac";
 "sign.detail.strengths" = "Fortaleses";
 "sign.detail.weaknesses" = "Debilitats";
 "sign.detail.love" = "Amor";
@@ -39,7 +43,7 @@
 "sign.detail.stone" = "Pedra";
 
 "notification.weekly.title" = "El teu horòscop setmanal ja està llest ✨";
-"notification.weekly.body" = "Obre Astro AI i llegeix la teva guia còsmica.";
+"notification.weekly.body" = "Obre Astro Zodiac AI i llegeix la teva guia còsmica.";
 
 "element.fire" = "Foc";
 "element.earth" = "Terra";

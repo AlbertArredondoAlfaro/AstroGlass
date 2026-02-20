@@ -9,7 +9,7 @@
 "action.cancel" = "取消";
 "action.save" = "保存";
 
-"onboarding.title.name" = "欢迎使用 Astro AI";
+"onboarding.title.name" = "欢迎使用 Astro Zodiac AI";
 "onboarding.subtitle.name" = "你叫什么名字？";
 "onboarding.placeholder.name" = "你的名字";
 "onboarding.subtitle.birthdate" = "选择你的出生日期";
@@ -21,6 +21,10 @@
 
 "profile.title" = "个人资料";
 "profile.edit" = "编辑资料";
+"profile.reset" = "重置资料";
+"profile.reset.confirm.title" = "重置资料？";
+"profile.reset.confirm.message" = "你将返回引导流程。保存前可以检查并修改资料。";
+"profile.reset.confirm.cta" = "继续";
 "profile.notifications" = "每周通知";
 "profile.notifications.subtitle" = "每周一上午10:00（本地时间）。";
 "profile.removeads.title" = "移除广告";
@@ -30,7 +34,7 @@
 "profile.removeads.restore" = "恢复购买";
 "profile.removeads.pricefallback" = "4.99 €";
 
-"signs.title" = "全部星座";
+"signs.title" = "黄道星座符号";
 "sign.detail.strengths" = "优势";
 "sign.detail.weaknesses" = "弱点";
 "sign.detail.love" = "爱情";
@@ -39,7 +43,7 @@
 "sign.detail.stone" = "宝石";
 
 "notification.weekly.title" = "你的每周运势已准备好 ✨";
-"notification.weekly.body" = "打开 Astro AI，查看你的宇宙指引。";
+"notification.weekly.body" = "打开 Astro Zodiac AI，查看你的宇宙指引。";
 
 "element.fire" = "火象";
 "element.earth" = "土象";

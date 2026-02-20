@@ -53,7 +53,6 @@
 		EF3CBD86B1D783378AE92CDA /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543540BFE5FB907B9B4612D4 /* NotificationScheduler.swift */; };
 		F330180A1E23EF1A50885E6C /* UIApplication+TopMost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC153A7584A418288E4FFA8B /* UIApplication+TopMost.swift */; };
 		F42AF5D159081D26F798651C /* AdBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F9828F772900C0835CF06D /* AdBannerView.swift */; };
-		FDA163A394AB8C4EA8A3CAAF /* zodiac-sheet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A41D979271FADC141C040F72 /* zodiac-sheet.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,7 +112,6 @@
 		9CE80BE75535536C57B201F4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9DE340F1E4266D7B2D673DE1 /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
 		A07030EC150F75D55F81BE08 /* CityLookupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityLookupService.swift; sourceTree = "<group>"; };
-		A41D979271FADC141C040F72 /* zodiac-sheet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zodiac-sheet.jpg"; sourceTree = "<group>"; };
 		A4B9C9D2A7159344D1C7C64D /* af */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = af; path = af.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A7280CDA3576D13D9C8E3754 /* AppButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonStyles.swift; sourceTree = "<group>"; };
 		A73412F6B235F0758BE7147C /* ZodiacCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacCalculator.swift; sourceTree = "<group>"; };
@@ -171,7 +169,6 @@
 				BFF95BEFA2EFE21DE98596AF /* InfoPlist.strings */,
 				F6C1943781F42E84CD9ADF16 /* Launch Screen.storyboard */,
 				D957E31D0A2BC860EDAD1BDE /* Localizable.strings */,
-				A41D979271FADC141C040F72 /* zodiac-sheet.jpg */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -416,7 +413,6 @@
 				4EE789FA567F9871EE168054 /* InfoPlist.strings in Resources */,
 				217A2249225022AF88D2F237 /* Launch Screen.storyboard in Resources */,
 				5DB5594E144AAB0560D0F1BA /* Localizable.strings in Resources */,
-				FDA163A394AB8C4EA8A3CAAF /* zodiac-sheet.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

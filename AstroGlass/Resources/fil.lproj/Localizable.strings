@@ -9,7 +9,7 @@
 "action.cancel" = "Kanselahin";
 "action.save" = "I-save";
 
-"onboarding.title.name" = "Maligayang pagdating sa Astro AI";
+"onboarding.title.name" = "Maligayang pagdating sa Astro Zodiac AI";
 "onboarding.subtitle.name" = "Ano ang pangalan mo?";
 "onboarding.placeholder.name" = "Pangalan mo";
 "onboarding.subtitle.birthdate" = "Piliin ang petsa ng kapanganakan";
@@ -21,6 +21,10 @@
 
 "profile.title" = "Profile";
 "profile.edit" = "I-edit ang profile";
+"profile.reset" = "I-reset ang profile";
+"profile.reset.confirm.title" = "I-reset ang profile?";
+"profile.reset.confirm.message" = "Babalik ka sa onboarding. Maaari mong suriin at baguhin ang iyong data bago i-save.";
+"profile.reset.confirm.cta" = "Magpatuloy";
 "profile.notifications" = "Lingguhang abiso";
 "profile.notifications.subtitle" = "Tuwing Lunes, 10:00 lokal na oras.";
 "profile.removeads.title" = "Alisin ang ads";
@@ -30,7 +34,7 @@
 "profile.removeads.restore" = "I-restore ang purchases";
 "profile.removeads.pricefallback" = "4.99 €";
 
-"signs.title" = "Lahat ng signo";
+"signs.title" = "Mga Simbolo ng Zodiaco";
 "sign.detail.strengths" = "Lakas";
 "sign.detail.weaknesses" = "Kahinaan";
 "sign.detail.love" = "Pag-ibig";
@@ -39,7 +43,7 @@
 "sign.detail.stone" = "Bato";
 
 "notification.weekly.title" = "Handa na ang iyong lingguhang horoscope ✨";
-"notification.weekly.body" = "Buksan ang Astro AI at basahin ang iyong cosmic guide.";
+"notification.weekly.body" = "Buksan ang Astro Zodiac AI at basahin ang iyong cosmic guide.";
 
 "element.fire" = "Apoy";
 "element.earth" = "Lupa";
