@@ -27,12 +27,6 @@
 "profile.reset.confirm.cta" = "Gaan voort";
 "profile.notifications" = "Weeklikse kennisgewing";
 "profile.notifications.subtitle" = "Elke Maandag om 10:00 plaaslike tyd.";
-"profile.removeads.title" = "Verwyder advertensies";
-"profile.removeads.subtitle" = "Ontsluit ’n advertensievrye ervaring.";
-"profile.removeads.active" = "Advertensies is reeds afgeskakel.";
-"profile.removeads.buy" = "Verwyder advertensies";
-"profile.removeads.restore" = "Herstel aankope";
-"profile.removeads.pricefallback" = "4.99 €";
 
 "signs.title" = "Diereriem-simbole";
 "sign.detail.strengths" = "Sterkpunte";

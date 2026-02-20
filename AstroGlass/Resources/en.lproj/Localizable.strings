@@ -27,12 +27,6 @@
 "profile.reset.confirm.cta" = "Continue";
 "profile.notifications" = "Weekly notification";
 "profile.notifications.subtitle" = "Every Monday at 10:00 local time.";
-"profile.removeads.title" = "Remove ads";
-"profile.removeads.subtitle" = "Unlock an ad-free experience.";
-"profile.removeads.active" = "Ads are already disabled.";
-"profile.removeads.buy" = "Remove ads";
-"profile.removeads.restore" = "Restore purchases";
-"profile.removeads.pricefallback" = "4.99 €";
 
 "signs.title" = "Zodiac Symbols";
 "sign.detail.strengths" = "Strengths";

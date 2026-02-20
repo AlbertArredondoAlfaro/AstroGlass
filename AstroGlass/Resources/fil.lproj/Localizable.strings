@@ -27,12 +27,6 @@
 "profile.reset.confirm.cta" = "Magpatuloy";
 "profile.notifications" = "Lingguhang abiso";
 "profile.notifications.subtitle" = "Tuwing Lunes, 10:00 lokal na oras.";
-"profile.removeads.title" = "Alisin ang ads";
-"profile.removeads.subtitle" = "I-unlock ang ad-free na karanasan.";
-"profile.removeads.active" = "Naka-disable na ang ads.";
-"profile.removeads.buy" = "Alisin ang ads";
-"profile.removeads.restore" = "I-restore ang purchases";
-"profile.removeads.pricefallback" = "4.99 €";
 
 "signs.title" = "Mga Simbolo ng Zodiaco";
 "sign.detail.strengths" = "Lakas";

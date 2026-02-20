@@ -27,12 +27,6 @@
 "profile.reset.confirm.cta" = "続ける";
 "profile.notifications" = "週間通知";
 "profile.notifications.subtitle" = "毎週月曜 10:00（現地時間）。";
-"profile.removeads.title" = "広告を削除";
-"profile.removeads.subtitle" = "広告なし体験をアンロック。";
-"profile.removeads.active" = "広告はすでに無効です。";
-"profile.removeads.buy" = "広告を削除";
-"profile.removeads.restore" = "購入を復元";
-"profile.removeads.pricefallback" = "4.99 €";
 
 "signs.title" = "星座シンボル";
 "sign.detail.strengths" = "強み";
